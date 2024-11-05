@@ -20,7 +20,6 @@ Overview of Microservice Components
    Analytics Service: Collects and analyzes user data (e.g., location, usage patterns) to provide insights, such as the SafeWell Score.
    API Gateway: Manages requests between the client applications and the backend services, handles authentication, and routes requests to appropriate services.
 
-Roadmap (Step-by-Step Guide)
 Phase 1: Initial Setup and Design
    Setup Development Environment:
        Install .NET Core SDK, Visual Studio or VS Code, and Docker.
@@ -110,3 +109,9 @@ Agenda
 
 1=> folder .
  
+
+
+Date : 05-11-2024 
+1. making changes on Architecture 
+2. understanding the requirements and designing class structure 
+3. starting to desingn class diagram 
