@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CareConnect.Services.SafetyApi.props" />
+</Project>

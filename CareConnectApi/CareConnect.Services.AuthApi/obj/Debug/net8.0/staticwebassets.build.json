@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "xpOcaRO9Do95Qz+Jk59b0q5K/iBh4LlU70qWPNvj2QQ=",
+  "Source": "CareConnect.Services.AuthApi",
+  "BasePath": "_content/CareConnect.Services.AuthApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
