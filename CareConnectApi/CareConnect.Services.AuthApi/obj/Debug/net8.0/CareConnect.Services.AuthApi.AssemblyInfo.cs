@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CareConnect.Services.AuthApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+805f209feb8d486e41dcdbfef8d85a2dd29e07e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e4609db853184841444ea7390d0bb000458fb26")]
 [assembly: System.Reflection.AssemblyProductAttribute("CareConnect.Services.AuthApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CareConnect.Services.AuthApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

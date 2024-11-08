@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CareConnect.Services.MentelHealthApi.props" />
+</Project>
