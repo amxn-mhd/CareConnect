@@ -1,0 +1,6 @@
+@CareConnect.Services.MentelHealthApi_HostAddress = http://localhost:5203
+
+GET {{CareConnect.Services.MentelHealthApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
