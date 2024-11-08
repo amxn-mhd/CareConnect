@@ -1,1 +1,4 @@
 ECHO is on.
+.vs/
+.bin/
+.obj/
