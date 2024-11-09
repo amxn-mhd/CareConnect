@@ -8,6 +8,6 @@ namespace CareConnect.Services.MentelHealthApi.Services.IService
 
         IEnumerable<MoodTrackerDto> GetUserMoodsByID(int id);
 
-        MoodTrackerDto GetUserMoodByDate(DateTime date);
+        MoodTrackerDto GetUserMoodByDate(DateOnly date);
     }
 }

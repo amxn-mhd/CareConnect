@@ -8,9 +8,9 @@ namespace CareConnect.Services.MentelHealthApi.Services.IService
 
         bool AddUserMoodLog(MoodTracker userMoodLog);
 
-        bool UpdateUserMoodLog(int id, DateTime date);
+        bool UpdateUserMoodLog(int id, DateOnly date);
 
-        bool DeleteUserMoodLog(DateTime date);
+        bool DeleteUserMoodLog(DateOnly date);
 
 
 
