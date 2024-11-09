@@ -14,35 +14,35 @@ namespace CareConnect.Services.MentelHealthApi.Services
 
         public IEnumerable<MoodTracker> GetUserMoodLog()
         {
-            return _db.MoodTracker.ToList();
+            return _db.MoodTrackers.ToList();
         }
 
        public  bool AddUserMoodLog(MoodTracker userMoodLog)
         {
             if (userMoodLog != null)
             {
-                _db.MoodTracker.Add(userMoodLog);
+                _db.MoodTrackers.Add(userMoodLog);
                 _db.SaveChanges();
                 return true;
             }
             return false;
         }
 
-        public bool DeleteUserMoodLog(DateTime date)
+        public bool DeleteUserMoodLog(DateOnly date)
         {
-            if (date != DateTime.MinValue)
+            if (date != DateOnly.MinValue)
             {
-                var result = _db.MoodTracker.FirstOrDefault(u => u.DateTimeOfEntry == date);
+                var result = _db.MoodTrackers.FirstOrDefault(u => u.DateTimeOfEntry == date);
                 if (result != null)
                 {
-                    _db.MoodTracker.Remove(result);
+                    _db.MoodTrackers.Remove(result);
                     return true;
                 }
             }
             return false;
         }
 
-        public bool UpdateUserMoodLog(int id, DateTime date)
+        public bool UpdateUserMoodLog(int id, DateOnly date)
         {
             throw new NotImplementedException();
         }

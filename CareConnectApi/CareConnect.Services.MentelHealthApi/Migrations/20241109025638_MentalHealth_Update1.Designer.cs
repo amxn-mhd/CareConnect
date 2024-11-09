@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CareConnect.Services.MentelHealthApi.Migrations
 {
     [DbContext(typeof(MentelHealthApiContext))]
-    partial class MentelHealthApiContextModelSnapshot : ModelSnapshot
+    [Migration("20241109025638_MentalHealth_Update1")]
+    partial class MentalHealth_Update1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -23,16 +26,23 @@ namespace CareConnect.Services.MentelHealthApi.Migrations
 
             modelBuilder.Entity("CareConnect.Services.MentelHealthApi.Models.MoodTracker", b =>
                 {
-                    b.Property<DateOnly>("DateTimeOfEntry")
-                        .HasColumnType("date")
+                    b.Property<DateTime>("DateTimeOfEntry")
+                        .HasColumnType("datetime2")
                         .HasColumnName("EntryDate");
 
                     b.Property<string>("CurrentMood")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<string>("Diagnosis")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
                     b.Property<int?>("DoctorID")
                         .HasColumnType("int");
+
+                    b.Property<bool>("History")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -47,7 +57,7 @@ namespace CareConnect.Services.MentelHealthApi.Migrations
 
                     b.HasKey("DateTimeOfEntry");
 
-                    b.ToTable("MoodTrackers");
+                    b.ToTable("MoodTracker");
                 });
 #pragma warning restore 612, 618
         }
