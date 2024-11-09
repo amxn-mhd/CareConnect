@@ -28,14 +28,14 @@
   {
     "ContainingType": "CareConnect.Services.MentelHealthApi.Controllers.MoodTrackersController",
     "Method": "GetMoodByDate",
-    "RelativePath": "api/MoodTrackers/{id}",
+    "RelativePath": "api/MoodTrackers/{Date}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.DateTime",
+        "Name": "Date",
+        "Type": "System.DateOnly",
         "IsRequired": true
       }
     ],
@@ -44,14 +44,14 @@
   {
     "ContainingType": "CareConnect.Services.MentelHealthApi.Controllers.MoodTrackersController",
     "Method": "DeleteMoodTracker",
-    "RelativePath": "api/MoodTrackers/{id}",
+    "RelativePath": "api/MoodTrackers/{Date}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.DateTime",
+        "Name": "Date",
+        "Type": "System.DateOnly",
         "IsRequired": true
       }
     ],

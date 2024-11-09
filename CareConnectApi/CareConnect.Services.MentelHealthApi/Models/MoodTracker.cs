@@ -6,10 +6,10 @@ namespace CareConnect.Services.MentelHealthApi.Models
     public class MoodTracker
     {
         [Key]
+        [Required]
         [Column("EntryDate")]
-        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
 
-        public DateTime DateTimeOfEntry { get; set; }  
+        public DateOnly DateTimeOfEntry { get; set; }  
 
         [Required]
         public int UserId { get; set; }  
@@ -21,10 +21,11 @@ namespace CareConnect.Services.MentelHealthApi.Models
         [Range(0, 100)]
         public int Score { get; set; }
 
-        public bool History { get; set; }  
+        //public bool History { get; set; }  
 
-        [MaxLength(500)]
-        public string? Diagnosis { get; set; }  
+        //[MaxLength(500)]
+        //public string? Diagnosis { get; set; }  
+
 
         [MaxLength(50)]
         public string? CurrentMood { get; set; }  

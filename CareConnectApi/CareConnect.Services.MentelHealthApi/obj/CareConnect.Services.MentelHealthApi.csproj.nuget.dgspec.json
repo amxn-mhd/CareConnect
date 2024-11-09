@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CapstoneProject\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj": {}
   },
   "projects": {
-    "E:\\CapstoneProject\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CapstoneProject\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj",
         "projectName": "CareConnect.Services.MentelHealthApi",
-        "projectPath": "E:\\CapstoneProject\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj",
-        "packagesPath": "C:\\Users\\jhasa\\.nuget\\packages\\",
-        "outputPath": "E:\\CapstoneProject\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jhasa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

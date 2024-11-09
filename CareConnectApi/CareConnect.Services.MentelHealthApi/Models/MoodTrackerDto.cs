@@ -6,9 +6,9 @@ namespace CareConnect.Services.MentelHealthApi.Models
     public class MoodTrackerDto
     {
         [Key]
+        [Required]
         [Column("EntryDate")]
-        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime DateTimeOfEntry { get; set; }
+        public DateOnly DateTimeOfEntry { get; set; }
 
         [Required]
         public int UserId { get; set; }
