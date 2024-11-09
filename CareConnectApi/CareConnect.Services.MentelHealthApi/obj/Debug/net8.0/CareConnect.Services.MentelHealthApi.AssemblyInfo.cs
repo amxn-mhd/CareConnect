@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CareConnect.Services.MentelHealthApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e50a0bb6646055cb4e668d6d8455a13ba5508dd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+159c4609d695c6a60a963c7431ad4c35636c2c65")]
 [assembly: System.Reflection.AssemblyProductAttribute("CareConnect.Services.MentelHealthApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CareConnect.Services.MentelHealthApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
