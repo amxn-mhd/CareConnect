@@ -1,50 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Migrations\\20241109103342_newUpdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CareConnect.Services.MentelHealthApi\\Migrations\\20241109103342_newUpdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnect\\careconnectapi\\careconnect.services.wellbeingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|solutionrelative:careconnect.services.wellbeingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnectapi\\careconnect.services.mentelhealthapi\\models\\moodtrackerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|solutionrelative:careconnect.services.mentelhealthapi\\models\\moodtrackerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnect\\careconnectapi\\careconnect.services.wellbeingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|solutionrelative:careconnect.services.wellbeingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnectapi\\careconnect.services.mentelhealthapi\\services\\moodtrackerdtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|solutionrelative:careconnect.services.mentelhealthapi\\services\\moodtrackerdtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnectapi\\careconnect.services.mentelhealthapi\\services\\iservice\\imoodtrackerdtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|solutionrelative:careconnect.services.mentelhealthapi\\services\\iservice\\imoodtrackerdtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnectapi\\careconnect.services.mentelhealthapi\\models\\moodtracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|solutionrelative:careconnect.services.mentelhealthapi\\models\\moodtracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnectapi\\careconnect.services.mentelhealthapi\\controllers\\moodtrackerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|solutionrelative:careconnect.services.mentelhealthapi\\controllers\\moodtrackerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnectapi\\careconnect.services.mentelhealthapi\\services\\moodtrackerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|solutionrelative:careconnect.services.mentelhealthapi\\services\\moodtrackerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnectapi\\careconnect.services.mentelhealthapi\\services\\iservice\\imoodtrackerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|solutionrelative:careconnect.services.mentelhealthapi\\services\\iservice\\imoodtrackerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnectapi\\careconnect.services.mentelhealthapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnect\\careconnectapi\\careconnect.services.mentelhealthapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|solutionrelative:careconnect.services.mentelhealthapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnectapi\\careconnect.services.mentelhealthapi\\data\\mentelhealthapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|solutionrelative:careconnect.services.mentelhealthapi\\data\\mentelhealthapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnect\\careconnectapi\\careconnect.services.wellbeingapi\\careconnect.services.wellbeingapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|solutionrelative:careconnect.services.wellbeingapi\\careconnect.services.wellbeingapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnectapi\\careconnect.services.mentelhealthapi\\careconnect.services.mentelhealthapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|solutionrelative:careconnect.services.mentelhealthapi\\careconnect.services.mentelhealthapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnect\\careconnectapi\\careconnect.services.wellbeingapi\\services\\iservice\\isleepanalyserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|solutionrelative:careconnect.services.wellbeingapi\\services\\iservice\\isleepanalyserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnect\\careconnectapi\\careconnect.services.mentelhealthapi\\controllers\\moodtrackerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|solutionrelative:careconnect.services.mentelhealthapi\\controllers\\moodtrackerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnect\\careconnectapi\\careconnect.services.mentelhealthapi\\services\\moodtrackerdtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|solutionrelative:careconnect.services.mentelhealthapi\\services\\moodtrackerdtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnect\\careconnectapi\\careconnect.services.wellbeingapi\\services\\sleepanalyserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|solutionrelative:careconnect.services.wellbeingapi\\services\\sleepanalyserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnect\\careconnectapi\\careconnect.services.wellbeingapi\\services\\sleepanalyserdtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|solutionrelative:careconnect.services.wellbeingapi\\services\\sleepanalyserdtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnect\\careconnectapi\\careconnect.services.wellbeingapi\\data\\sleepanalyserapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|solutionrelative:careconnect.services.wellbeingapi\\data\\sleepanalyserapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnect\\careconnectapi\\careconnect.services.mentelhealthapi\\services\\iservice\\imoodtrackerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|solutionrelative:careconnect.services.mentelhealthapi\\services\\iservice\\imoodtrackerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnect\\careconnectapi\\careconnect.services.mentelhealthapi\\services\\iservice\\imoodtrackerdtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|solutionrelative:careconnect.services.mentelhealthapi\\services\\iservice\\imoodtrackerdtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnect\\careconnectapi\\careconnect.services.mentelhealthapi\\models\\moodtrackerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}|CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj|solutionrelative:careconnect.services.mentelhealthapi\\models\\moodtrackerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnect\\careconnectapi\\careconnect.services.wellbeingapi\\controllers\\sleepanalysercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|solutionrelative:careconnect.services.wellbeingapi\\controllers\\sleepanalysercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnect\\careconnectapi\\careconnect.services.wellbeingapi\\services\\iservice\\isleepanalyserdtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|solutionrelative:careconnect.services.wellbeingapi\\services\\iservice\\isleepanalyserdtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnect\\careconnectapi\\careconnect.services.wellbeingapi\\configurations\\automapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|solutionrelative:careconnect.services.wellbeingapi\\configurations\\automapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnect\\careconnectapi\\careconnect.services.wellbeingapi\\models\\sleepanalyserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|solutionrelative:careconnect.services.wellbeingapi\\models\\sleepanalyserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|c:\\users\\administrator\\desktop\\careconnect\\careconnect\\careconnectapi\\careconnect.services.wellbeingapi\\models\\sleepanalyser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15750D08-BB5B-4146-A790-6D136D44B506}|CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.csproj|solutionrelative:careconnect.services.wellbeingapi\\models\\sleepanalyser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,19 +82,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20241109103342_newUpdate.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Migrations\\20241109103342_newUpdate.cs",
-              "RelativeDocumentMoniker": "CareConnect.Services.MentelHealthApi\\Migrations\\20241109103342_newUpdate.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Migrations\\20241109103342_newUpdate.cs",
-              "RelativeToolTip": "CareConnect.Services.MentelHealthApi\\Migrations\\20241109103342_newUpdate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Program.cs",
+              "RelativeDocumentMoniker": "CareConnect.Services.WellBeingApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Program.cs",
+              "RelativeToolTip": "CareConnect.Services.WellBeingApi\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAkwBEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T10:33:42.385Z",
+              "WhenOpened": "2024-11-11T11:41:06.753Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Program.cs",
+              "RelativeDocumentMoniker": "CareConnect.Services.MentelHealthApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Program.cs",
+              "RelativeToolTip": "CareConnect.Services.MentelHealthApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAADLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T12:10:33.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CareConnect.Services.WellBeingApi.http",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.http",
+              "RelativeDocumentMoniker": "CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.http",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.http",
+              "RelativeToolTip": "CareConnect.Services.WellBeingApi\\CareConnect.Services.WellBeingApi.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-11-11T12:08:46.227Z",
               "EditorCaption": ""
             },
             {
@@ -75,132 +134,194 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MoodTrackerDto.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Models\\MoodTrackerDto.cs",
-              "RelativeDocumentMoniker": "CareConnect.Services.MentelHealthApi\\Models\\MoodTrackerDto.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Models\\MoodTrackerDto.cs",
-              "RelativeToolTip": "CareConnect.Services.MentelHealthApi\\Models\\MoodTrackerDto.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBMAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "SleepAnalyserDtoService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Services\\SleepAnalyserDtoService.cs",
+              "RelativeDocumentMoniker": "CareConnect.Services.WellBeingApi\\Services\\SleepAnalyserDtoService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Services\\SleepAnalyserDtoService.cs",
+              "RelativeToolTip": "CareConnect.Services.WellBeingApi\\Services\\SleepAnalyserDtoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T09:55:04.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IMoodTrackerDtoService.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Services\\IService\\IMoodTrackerDtoService.cs",
-              "RelativeDocumentMoniker": "CareConnect.Services.MentelHealthApi\\Services\\IService\\IMoodTrackerDtoService.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Services\\IService\\IMoodTrackerDtoService.cs",
-              "RelativeToolTip": "CareConnect.Services.MentelHealthApi\\Services\\IService\\IMoodTrackerDtoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T09:49:09.334Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IMoodTrackerService.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Services\\IService\\IMoodTrackerService.cs",
-              "RelativeDocumentMoniker": "CareConnect.Services.MentelHealthApi\\Services\\IService\\IMoodTrackerService.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Services\\IService\\IMoodTrackerService.cs",
-              "RelativeToolTip": "CareConnect.Services.MentelHealthApi\\Services\\IService\\IMoodTrackerService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T09:49:00.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MentelHealthApiContext.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Data\\MentelHealthApiContext.cs",
-              "RelativeDocumentMoniker": "CareConnect.Services.MentelHealthApi\\Data\\MentelHealthApiContext.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Data\\MentelHealthApiContext.cs",
-              "RelativeToolTip": "CareConnect.Services.MentelHealthApi\\Data\\MentelHealthApiContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T09:48:03.381Z",
+              "WhenOpened": "2024-11-11T05:33:55.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MoodTracker.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Models\\MoodTracker.cs",
-              "RelativeDocumentMoniker": "CareConnect.Services.MentelHealthApi\\Models\\MoodTracker.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Models\\MoodTracker.cs",
-              "RelativeToolTip": "CareConnect.Services.MentelHealthApi\\Models\\MoodTracker.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Title": "ISleepAnalyserService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Services\\IService\\ISleepAnalyserService.cs",
+              "RelativeDocumentMoniker": "CareConnect.Services.WellBeingApi\\Services\\IService\\ISleepAnalyserService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Services\\IService\\ISleepAnalyserService.cs",
+              "RelativeToolTip": "CareConnect.Services.WellBeingApi\\Services\\IService\\ISleepAnalyserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T09:44:11.23Z",
+              "WhenOpened": "2024-11-11T05:15:51.672Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CareConnect.Services.MentelHealthApi",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj",
-              "RelativeDocumentMoniker": "CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj",
-              "RelativeToolTip": "CareConnect.Services.MentelHealthApi\\CareConnect.Services.MentelHealthApi.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-09T09:43:10.6Z",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\appsettings.json",
+              "RelativeDocumentMoniker": "CareConnect.Services.WellBeingApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\appsettings.json",
+              "RelativeToolTip": "CareConnect.Services.WellBeingApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-11T11:48:03.017Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Program.cs",
-              "RelativeDocumentMoniker": "CareConnect.Services.MentelHealthApi\\Program.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Program.cs",
-              "RelativeToolTip": "CareConnect.Services.MentelHealthApi\\Program.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAowBUAAABWAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "SleepAnalyserService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Services\\SleepAnalyserService.cs",
+              "RelativeDocumentMoniker": "CareConnect.Services.WellBeingApi\\Services\\SleepAnalyserService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Services\\SleepAnalyserService.cs",
+              "RelativeToolTip": "CareConnect.Services.WellBeingApi\\Services\\SleepAnalyserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T20:36:42.7Z",
+              "WhenOpened": "2024-11-11T05:11:36.046Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "MoodTrackerService.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Services\\MoodTrackerService.cs",
-              "RelativeDocumentMoniker": "CareConnect.Services.MentelHealthApi\\Services\\MoodTrackerService.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Services\\MoodTrackerService.cs",
-              "RelativeToolTip": "CareConnect.Services.MentelHealthApi\\Services\\MoodTrackerService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowC0AAAAJAAAAAAAAAA==",
+              "Title": "MoodTrackerDtoService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Services\\MoodTrackerDtoService.cs",
+              "RelativeDocumentMoniker": "CareConnect.Services.MentelHealthApi\\Services\\MoodTrackerDtoService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Services\\MoodTrackerDtoService.cs",
+              "RelativeToolTip": "CareConnect.Services.MentelHealthApi\\Services\\MoodTrackerDtoService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAACsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T20:18:42.682Z",
+              "WhenOpened": "2024-11-11T05:08:28.992Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MoodTrackerDtoService.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Services\\MoodTrackerDtoService.cs",
-              "RelativeDocumentMoniker": "CareConnect.Services.MentelHealthApi\\Services\\MoodTrackerDtoService.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Services\\MoodTrackerDtoService.cs",
-              "RelativeToolTip": "CareConnect.Services.MentelHealthApi\\Services\\MoodTrackerDtoService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwA8AAAApAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "SleepAnalyserApiContext.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Data\\SleepAnalyserApiContext.cs",
+              "RelativeDocumentMoniker": "CareConnect.Services.WellBeingApi\\Data\\SleepAnalyserApiContext.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Data\\SleepAnalyserApiContext.cs",
+              "RelativeToolTip": "CareConnect.Services.WellBeingApi\\Data\\SleepAnalyserApiContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T19:53:42.484Z",
+              "WhenOpened": "2024-11-11T11:50:25.173Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "MoodTrackersController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Controllers\\MoodTrackersController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Controllers\\MoodTrackersController.cs",
               "RelativeDocumentMoniker": "CareConnect.Services.MentelHealthApi\\Controllers\\MoodTrackersController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Controllers\\MoodTrackersController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Controllers\\MoodTrackersController.cs",
               "RelativeToolTip": "CareConnect.Services.MentelHealthApi\\Controllers\\MoodTrackersController.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAAADIAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T18:34:35.219Z",
+              "WhenOpened": "2024-11-11T05:08:40.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IMoodTrackerService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Services\\IService\\IMoodTrackerService.cs",
+              "RelativeDocumentMoniker": "CareConnect.Services.MentelHealthApi\\Services\\IService\\IMoodTrackerService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Services\\IService\\IMoodTrackerService.cs",
+              "RelativeToolTip": "CareConnect.Services.MentelHealthApi\\Services\\IService\\IMoodTrackerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T05:15:15.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SleepAnalyserController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Controllers\\SleepAnalyserController.cs",
+              "RelativeDocumentMoniker": "CareConnect.Services.WellBeingApi\\Controllers\\SleepAnalyserController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Controllers\\SleepAnalyserController.cs",
+              "RelativeToolTip": "CareConnect.Services.WellBeingApi\\Controllers\\SleepAnalyserController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAIwDgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T05:05:00.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IMoodTrackerDtoService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Services\\IService\\IMoodTrackerDtoService.cs",
+              "RelativeDocumentMoniker": "CareConnect.Services.MentelHealthApi\\Services\\IService\\IMoodTrackerDtoService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Services\\IService\\IMoodTrackerDtoService.cs",
+              "RelativeToolTip": "CareConnect.Services.MentelHealthApi\\Services\\IService\\IMoodTrackerDtoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T10:26:08.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ISleepAnalyserDtoService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Services\\IService\\ISleepAnalyserDtoService.cs",
+              "RelativeDocumentMoniker": "CareConnect.Services.WellBeingApi\\Services\\IService\\ISleepAnalyserDtoService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Services\\IService\\ISleepAnalyserDtoService.cs",
+              "RelativeToolTip": "CareConnect.Services.WellBeingApi\\Services\\IService\\ISleepAnalyserDtoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T10:26:52.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AutoMapperConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Configurations\\AutoMapperConfig.cs",
+              "RelativeDocumentMoniker": "CareConnect.Services.WellBeingApi\\Configurations\\AutoMapperConfig.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Configurations\\AutoMapperConfig.cs",
+              "RelativeToolTip": "CareConnect.Services.WellBeingApi\\Configurations\\AutoMapperConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T05:19:40.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SleepAnalyserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Models\\SleepAnalyserDto.cs",
+              "RelativeDocumentMoniker": "CareConnect.Services.WellBeingApi\\Models\\SleepAnalyserDto.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Models\\SleepAnalyserDto.cs",
+              "RelativeToolTip": "CareConnect.Services.WellBeingApi\\Models\\SleepAnalyserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T05:05:59.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MoodTrackerDto.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Models\\MoodTrackerDto.cs",
+              "RelativeDocumentMoniker": "CareConnect.Services.MentelHealthApi\\Models\\MoodTrackerDto.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.MentelHealthApi\\Models\\MoodTrackerDto.cs",
+              "RelativeToolTip": "CareConnect.Services.MentelHealthApi\\Models\\MoodTrackerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T05:05:29.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SleepAnalyser.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Models\\SleepAnalyser.cs",
+              "RelativeDocumentMoniker": "CareConnect.Services.WellBeingApi\\Models\\SleepAnalyser.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnect\\CareConnectApi\\CareConnect.Services.WellBeingApi\\Models\\SleepAnalyser.cs",
+              "RelativeToolTip": "CareConnect.Services.WellBeingApi\\Models\\SleepAnalyser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T04:59:14.643Z",
               "EditorCaption": ""
             }
           ]
