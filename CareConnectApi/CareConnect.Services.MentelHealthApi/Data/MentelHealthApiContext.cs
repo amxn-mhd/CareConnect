@@ -13,4 +13,6 @@ using CareConnect.Services.MentelHealthApi.Models;
         }
 
         public DbSet<MoodTracker> MoodTrackers { get; set; } = default!;
+
+public DbSet<CareConnect.Services.MentelHealthApi.Models.Doctor> Doctor { get; set; } = default!;
     }

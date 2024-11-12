@@ -28,6 +28,8 @@ namespace CareConnect.Services.MentelHealthApi
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -36,6 +38,10 @@ namespace CareConnect.Services.MentelHealthApi
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            //seeding data to User interface Angular. 
+
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+
 
             app.UseHttpsRedirection();
 
