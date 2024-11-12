@@ -1,0 +1,23 @@
+.score-meter {
+    width: 25%;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+  .meter {
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .meter-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ff6b6b 0%, #4ecdc4 100%);
+    transition: width 0.5s ease-in-out;
+  }
+  .score-text {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+  }

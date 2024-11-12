@@ -24,7 +24,7 @@ export class AppComponent implements  OnInit  {
       .pipe(filter((event: Event): event is NavigationEnd => event instanceof NavigationEnd))
       .subscribe((event: NavigationEnd) => {
         // Show buttons only on the default route (home page)
-        this.showButtons = event.url === '/' || event.url === '/home';
+        this.showButtons = event.url === '/' || event.url === '/';
       });
     }
 }
