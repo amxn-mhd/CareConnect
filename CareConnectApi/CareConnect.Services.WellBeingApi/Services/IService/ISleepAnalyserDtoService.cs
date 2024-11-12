@@ -1,4 +1,5 @@
 ﻿using CareConnect.Services.WellBeingApi.Models;
+using System;
 
 namespace CareConnect.Services.WellBeingApi.Services.IService
 {
@@ -9,5 +10,6 @@ namespace CareConnect.Services.WellBeingApi.Services.IService
         IEnumerable<SleepAnalyserDto> GetUserSleepByID(int id);
 
         SleepAnalyserDto GetUserSleepByDate(DateOnly date);
+        
     }
 }

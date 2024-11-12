@@ -7,10 +7,10 @@ namespace CareConnect.Services.WellBeingApi.Services
     
         public class SleepAnalyserDtoService : ISleepAnalyserDtoService
         {
-            private readonly SleepAnalyserApiContext _db;
+            private readonly WellBeingApiContext _db;
             private readonly IMapper _mapper;
 
-            public SleepAnalyserDtoService(IMapper mapper, SleepAnalyserApiContext sleepAnalyserApiContext)
+            public SleepAnalyserDtoService(IMapper mapper, WellBeingApiContext sleepAnalyserApiContext)
             {
                 _mapper = mapper;
                 _db = sleepAnalyserApiContext;

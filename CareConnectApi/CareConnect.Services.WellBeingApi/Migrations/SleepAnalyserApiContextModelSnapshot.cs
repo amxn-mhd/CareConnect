@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CareConnect.Services.WellBeingApi.Migrations
 {
-    [DbContext(typeof(SleepAnalyserApiContext))]
+    [DbContext(typeof(WellBeingApiContext))]
     partial class SleepAnalyserApiContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -20,6 +20,28 @@ namespace CareConnect.Services.WellBeingApi.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("CareConnect.Services.WellBeingApi.Models.ReminderScheduler", b =>
+                {
+                    b.Property<DateOnly>("DateTimeOfEntry")
+                        .HasColumnType("date")
+                        .HasColumnName("EntryDate");
+
+                    b.Property<TimeOnly>("Time")
+                        .HasColumnType("time");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("DateTimeOfEntry");
+
+                    b.ToTable("ReminderScheduler");
+                });
 
             modelBuilder.Entity("CareConnect.Services.WellBeingApi.Models.SleepAnalyser", b =>
                 {

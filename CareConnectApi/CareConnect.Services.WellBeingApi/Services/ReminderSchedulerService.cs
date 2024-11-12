@@ -1,49 +1,48 @@
 ﻿using CareConnect.Services.WellBeingApi.Models;
 using CareConnect.Services.WellBeingApi.Services.IService;
-using System.Collections.Generic;
 
 namespace CareConnect.Services.WellBeingApi.Services
 {
-    public class SleepAnalyserService : ISleepAnalyserService
+    public class ReminderSchedulerService : IReminderSchedulerService
     {
         private readonly WellBeingApiContext _db;
 
-        public SleepAnalyserService(WellBeingApiContext db)
+        public ReminderSchedulerService(WellBeingApiContext db)
         {
             _db = db;
         }
 
-        public IEnumerable<SleepAnalyser> GetUserSleepLog()
+        public IEnumerable<ReminderScheduler> GetUserReminderLog()
         {
-            return _db.SleepAnalyser.ToList();
+            return _db.ReminderScheduler.ToList();
         }
 
-        public bool AddUserSleepLog(SleepAnalyser userSleepLog)
+        public bool AddUserReminderLog(ReminderScheduler userReminderLog)
         {
-            if (userSleepLog != null)
+            if (userReminderLog != null)
             {
-                _db.SleepAnalyser.Add(userSleepLog);
+                _db.ReminderScheduler.Add(userReminderLog);
                 _db.SaveChanges();
                 return true;
             }
             return false;
         }
 
-        public bool DeleteUserSleepLog(DateOnly date)
+        public bool DeleteUserReminderLog(DateOnly date)
         {
             if (date != DateOnly.MinValue)
             {
-                var result = _db.SleepAnalyser.FirstOrDefault(u => u.DateTimeOfEntry == date);
+                var result = _db.ReminderScheduler.FirstOrDefault(u => u.DateTimeOfEntry == date);
                 if (result != null)
                 {
-                    _db.SleepAnalyser.Remove(result);
+                    _db.ReminderScheduler.Remove(result);
                     return true;
                 }
             }
             return false;
         }
 
-        public bool UpdateUserSleepLog(int id, DateOnly date)
+        public bool UpdateUserReminderLog(int id, DateOnly date)
         {
             throw new NotImplementedException();
         }

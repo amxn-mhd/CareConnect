@@ -1,4 +1,6 @@
 ﻿using CareConnect.Services.WellBeingApi.Models;
+using System;
+using System.Collections.Generic;
 
 namespace CareConnect.Services.WellBeingApi.Services.IService
 {

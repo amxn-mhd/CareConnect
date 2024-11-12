@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using CareConnect.Services.WellBeingApi.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CareConnect.Services.MentelHealthApi.Configurations
 {
@@ -8,6 +9,7 @@ namespace CareConnect.Services.MentelHealthApi.Configurations
         public AutoMapperConfig() 
         {
             CreateMap <SleepAnalyser, SleepAnalyserDto>();
+            CreateMap<ReminderScheduler, ReminderSchedulerDto>();
         }
      
     }
