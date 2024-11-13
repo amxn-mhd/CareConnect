@@ -14,12 +14,15 @@ namespace CareConnect.Services.MentelHealthApi
             builder.Services.AddDbContext<MentelHealthApiContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("MentelHealthApiContext") ?? throw new InvalidOperationException("Connection string 'MentelHealthApiContext' not found.")));
 
+
             // Add services to the container.
 
             //Adding AutoMapper dependency 
 
             builder.Services.AddAutoMapper(typeof(AutoMapperConfig).Assembly);
             builder.Services.AddTransient<IMoodTrackerService , MoodTrackerService>();
+            builder.Services.AddTransient<IDoctorService, DoctorService>();
+
             builder.Services.AddScoped<IMoodTrackerDtoService , MoodTrackerDtoService>();
 
 
