@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CareConnect.Services.WellBeingApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e50a0bb6646055cb4e668d6d8455a13ba5508dd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3568c5387a562205dbe2e59c7f2ee2491b3d1aa")]
 [assembly: System.Reflection.AssemblyProductAttribute("CareConnect.Services.WellBeingApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CareConnect.Services.WellBeingApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,91 @@
+[
+  {
+    "ContainingType": "CareConnect.Services.SafetyApi.Controllers.ReportIncidentController",
+    "Method": "GetReportTracker",
+    "RelativePath": "api/ReportIncident",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareConnect.Services.SafetyApi.Controllers.ReportIncidentController",
+    "Method": "PostReportTracker",
+    "RelativePath": "api/ReportIncident",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reportIncident",
+        "Type": "CareConnect.Services.SafetyApi.Models.ReportIncident",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareConnect.Services.SafetyApi.Controllers.ReportIncidentController",
+    "Method": "GetReportByDate",
+    "RelativePath": "api/ReportIncident/{Date}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Date",
+        "Type": "System.DateOnly",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareConnect.Services.SafetyApi.Controllers.ReportIncidentController",
+    "Method": "DeleteReportAnalyser",
+    "RelativePath": "api/ReportIncident/{Date}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Date",
+        "Type": "System.DateOnly",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareConnect.Services.SafetyApi.Controllers.ReportIncidentController",
+    "Method": "GetReport",
+    "RelativePath": "api/ReportIncident/getReportData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareConnect.Services.SafetyApi.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CareConnect.Services.SafetyApi.WeatherForecast, CareConnect.Services.SafetyApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

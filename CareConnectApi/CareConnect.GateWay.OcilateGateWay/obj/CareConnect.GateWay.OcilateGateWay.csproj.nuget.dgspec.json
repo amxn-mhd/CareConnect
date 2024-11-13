@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.GateWay.OcilateGateWay\\CareConnect.GateWay.OcilateGateWay.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\Safety\\CareConnectApi\\CareConnect.GateWay.OcilateGateWay\\CareConnect.GateWay.OcilateGateWay.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.GateWay.OcilateGateWay\\CareConnect.GateWay.OcilateGateWay.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\Safety\\CareConnectApi\\CareConnect.GateWay.OcilateGateWay\\CareConnect.GateWay.OcilateGateWay.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.GateWay.OcilateGateWay\\CareConnect.GateWay.OcilateGateWay.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Safety\\CareConnectApi\\CareConnect.GateWay.OcilateGateWay\\CareConnect.GateWay.OcilateGateWay.csproj",
         "projectName": "CareConnect.GateWay.OcilateGateWay",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.GateWay.OcilateGateWay\\CareConnect.GateWay.OcilateGateWay.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\Safety\\CareConnectApi\\CareConnect.GateWay.OcilateGateWay\\CareConnect.GateWay.OcilateGateWay.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\CareConnect\\CareConnectApi\\CareConnect.GateWay.OcilateGateWay\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\Safety\\CareConnectApi\\CareConnect.GateWay.OcilateGateWay\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
