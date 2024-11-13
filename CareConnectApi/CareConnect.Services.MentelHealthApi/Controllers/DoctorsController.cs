@@ -51,7 +51,6 @@ namespace CareConnect.Services.MentelHealthApi.Controllers
         // PUT: api/Doctors/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        [Authorize]
         public async Task<IActionResult> PutDoctor(int id, Doctor doctor)
         {
            var result= await _DoctorService.UpdateDoctor(id, doctor);
@@ -64,18 +63,17 @@ namespace CareConnect.Services.MentelHealthApi.Controllers
         [HttpPost]
         public async Task<ActionResult<Doctor>> PostDoctor(Doctor doctor)
         {
-            var result =_DoctorService.AddDoctor(doctor);
-            if (result == null) { return NotFound();
-            }
+            var result = await _DoctorService.AddDoctor(doctor);
+          
             return Ok(result);  
         }
 
         // DELETE: api/Doctors/5
-        [Authorize(Roles = "Admin,Doctor")]
+        //[Authorize(Roles = "Admin,Doctor")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteDoctor(int id)
         {
-           var result =_DoctorService.DeleteDoctor(id);
+           var result =await _DoctorService.DeleteDoctor(id);
             return new OkObjectResult(result);
         }
 
