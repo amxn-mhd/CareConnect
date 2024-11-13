@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\CareConnect.Services.WellBeingApi.props" />
-</Project>
