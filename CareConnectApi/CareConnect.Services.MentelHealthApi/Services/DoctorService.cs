@@ -42,14 +42,13 @@ namespace CareConnect.Services.MentelHealthApi.Services
            return await _context.Doctor.ToListAsync();
         }
 
-        [Authorize]/// changes needed 
+        // changes needed 
         public async Task<bool> UpdateDoctor(int id, Doctor d)
         {
             var result =  (_context.Doctor.FirstOrDefault(d => d.DoctorId == id));
 
             if (result == null) { return false; }
 
-             result.DoctorId= d.DoctorId;
             result.DoctorName= d.DoctorName;
             result.Specialization  = d.Specialization;
             result.Availability = d.Availability;
