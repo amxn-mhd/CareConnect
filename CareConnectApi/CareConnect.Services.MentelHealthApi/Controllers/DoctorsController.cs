@@ -71,6 +71,7 @@ namespace CareConnect.Services.MentelHealthApi.Controllers
         }
 
         // DELETE: api/Doctors/5
+        [Authorize(Roles = "Admin,Doctor")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteDoctor(int id)
         {
