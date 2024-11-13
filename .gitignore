@@ -1,4 +1,5 @@
 # Ignore bin and obj folders in all project subdirectories
+**/.vs/
 **/bin/
 **/obj/
 
@@ -14,6 +15,13 @@
 # Ignore any Visual Studio specific files
 .vscode/
 .vs/
+<<<<<<< HEAD
+bin/
+obj/
+
+**/obj/
+**/bin/
+=======
 *.user
 *.suo
 
@@ -54,3 +62,4 @@ _UpgradeReport_Files/
 # Auto-generated folders for various extensions or external tools
 Generated_Code/
 ServiceFabric/
+>>>>>>> 1a6b4e9b98539b43faa8d82f5f57dcec91a6827a
