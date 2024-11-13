@@ -8,7 +8,7 @@ import { BadHealthComponent } from "../bad-health/bad-health.component";
 @Component({
   selector: 'app-form',
   standalone: true,
-  imports: [FormsModule, ScoremeterComponent, CommonModule, BadHealthComponent],
+  imports: [FormsModule, ScoremeterComponent, CommonModule],
   templateUrl: './form.component.html',
   styleUrl: './form.component.css'
 })
@@ -34,12 +34,12 @@ export class FormComponent {
     this.showMeter = true;
 
     setTimeout(() => {
-      if (this.score > 60) {
+      if (this.score >= 60) {
         this.router.navigate(['mental-health/good-health']);  
-      } else if (this.score >= 30) {
+      } else if (this.score > 40) {
         this.router.navigate(['mental-health/average-health']);  
       } else {
-        this.router.navigate(['bad-health']);  
+        this.router.navigate(['mental-health/bad-health']);  
       }
     }, 1500);
   

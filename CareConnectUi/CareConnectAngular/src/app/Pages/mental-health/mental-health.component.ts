@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { ServiceComponent } from "../service/service.component";
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-mental-health',
   standalone: true,
-  imports: [RouterOutlet,CommonModule],
+  imports: [FormsModule,RouterOutlet, CommonModule],
   templateUrl: './mental-health.component.html',
   styleUrls: ['./mental-health.component.css'],
 })

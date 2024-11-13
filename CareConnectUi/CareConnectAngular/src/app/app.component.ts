@@ -3,11 +3,12 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { Router, NavigationEnd, Event } from '@angular/router';import { filter } from 'rxjs/operators';
 import { ServiceComponent } from "./Pages/service/service.component";
 import { CommonModule } from '@angular/common';
+import { HomeComponent } from "./Pages/home/home.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,CommonModule, ServiceComponent],
+  imports: [RouterOutlet, CommonModule, HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

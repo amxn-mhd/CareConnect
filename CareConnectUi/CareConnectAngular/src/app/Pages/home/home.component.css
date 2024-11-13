@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a1433;
+    color: white;
+  }
+  
+  .container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .header-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-sos {
+    background-color: #ff0000;
+    color: white;
+  }
+  
+  .btn-logout {
+    background-color: #333;
+    color: white;
+  }
+  
+  .main-content {
+    display: grid;
+    background-color: #0a1433;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .mood-analyzer {
+    background-color: white;
+    border-radius: 10px;
+    align-items: baseline;
+    right:10px;
+    top:20px;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .mood-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .star-icon {
+    color: gold;
+    margin-right: 10px;
+  }
+  
+  .interaction-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .interaction-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+  
+  .interaction-box:hover {
+    transform: scale(1.02);
+  }
+  
+  .reminders-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    color: #333;
+    grid-column: span 2;
+  }
+  
+  .reminders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .reminder-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .emergency-button {
+    background-color: #ff0000;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .emergency-button:hover {
+    transform: scale(1.02);
+  }
+  
+  .report-incident {
+    background-color: white;
+    color: #333;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  
