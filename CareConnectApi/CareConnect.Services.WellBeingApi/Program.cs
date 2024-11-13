@@ -1,4 +1,9 @@
 
+using CareConnect.Services.MentelHealthApi.Configurations;
+using CareConnect.Services.WellBeingApi.Services;
+using CareConnect.Services.WellBeingApi.Services.IService;
+using Microsoft.EntityFrameworkCore;
+
 namespace CareConnect.Services.WellBeingApi
 {
     public class Program
@@ -7,7 +12,24 @@ namespace CareConnect.Services.WellBeingApi
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddDbContext<WellBeingApiContext>(options =>
+               options.UseSqlServer(builder.Configuration.GetConnectionString("SleepAnalyserApiContext") ?? throw new InvalidOperationException("Connection string 'SleepAnalyser' not found.")));
+
+            //builder.Services.AddDbContext<ReminderSchedulerApiContext>(options =>
+            //   options.UseSqlServer(builder.Configuration.GetConnectionString("ReminderSchedulerApiContext") ?? throw new InvalidOperationException("Connection string 'SleepAnalyser' not found.")));
+
             // Add services to the container.
+            //Adding AutoMapper dependency 
+
+            builder.Services.AddAutoMapper(typeof(AutoMapperConfig).Assembly);
+
+            builder.Services.AddTransient<ISleepAnalyserService, SleepAnalyserService>();
+            builder.Services.AddScoped<ISleepAnalyserDtoService, SleepAnalyserDtoService>();
+
+            builder.Services.AddTransient<IReminderSchedulerService, ReminderSchedulerService>();
+            builder.Services.AddScoped<IReminderSchedulerDtoService, ReminderSchedulerDtoService>();
+
+            //builder.Services.AddDbContext<SleepAnalyserApiContext>(options => options.serv
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
