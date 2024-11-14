@@ -1,13 +1,16 @@
 import { Component,OnInit } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { Router, NavigationEnd, Event } from '@angular/router';import { filter } from 'rxjs/operators';
-import { ServiceComponent } from "./Pages/service/service.component";
 import { CommonModule } from '@angular/common';
+import { HomeComponent } from "./Pages/home/home.component";
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { LandingPageComponent } from './Pages/LandAndAuth/landing-page/landing-page.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,CommonModule, ServiceComponent],
+  imports: [RouterOutlet, RouterLink,CommonModule,LandingPageComponent, HomeComponent,MatIconModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

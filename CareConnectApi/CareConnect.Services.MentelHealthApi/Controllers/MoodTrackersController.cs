@@ -61,7 +61,7 @@ namespace CareConnect.Services.MentelHealthApi.Controllers
         [HttpPost]
         public async Task<IActionResult> PostMoodTracker(MoodTracker moodTracker)
         {
-            var result= _mTService.AddUserMoodLog(moodTracker);
+            var result = _mTService.AddUserMoodLog(moodTracker);
 
             return Ok(result);
         }
@@ -70,7 +70,7 @@ namespace CareConnect.Services.MentelHealthApi.Controllers
         [HttpDelete("{Date}")]
         public async Task<IActionResult> DeleteMoodTracker(DateOnly Date)
         {
-            var res =  _mTService.DeleteUserMoodLog(Date);
+            var res = _mTService.DeleteUserMoodLog(Date);
             if (res == null)
             {
                 return NotFound();
@@ -79,6 +79,14 @@ namespace CareConnect.Services.MentelHealthApi.Controllers
 
         }
 
+        [HttpGet("GetByUser")]
+        public async Task<IActionResult> GetUsersMood(int id)
+        {
+            var res =  _mTDtoService.GetUserMoodsByID(id);
+
+            return Ok(res);
+
+        }
         
     }
 }

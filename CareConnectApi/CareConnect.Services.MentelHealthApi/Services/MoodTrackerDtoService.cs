@@ -37,7 +37,7 @@ namespace CareConnect.Services.MentelHealthApi.Services
 
         public IEnumerable<MoodTrackerDto> GetUserMoodsByID(int id)
         {
-            var result = _db.MoodTrackers.Select(i => i.UserId == id);
+            var result = _db.MoodTrackers.Where(i => i.UserId == id).ToList();
             return _mapper.Map<IEnumerable<MoodTrackerDto>>(result);
 
         }

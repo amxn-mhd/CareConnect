@@ -1,0 +1,58 @@
+
+
+  
+
+  body {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+  
+  .testimonial-card {
+    min-width: 300px;
+    margin: 0 16px;
+    background: black;
+  }
+  
+  .sos-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transform: scale(1.2);
+  }
+  
+  .social-links a {
+    color: white;
+    margin: 0 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #ff4444;
+  }
+  
+  .nav-buttons:hover {
+    background-color: #ff4444 !important;
+    color: white !important;
+    transition: all 0.3s ease;
+  }
+  
+  .testimonial-container {
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+  }
+  
+  
+  .mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  mat-card{
+    background-color: black;
+  }
