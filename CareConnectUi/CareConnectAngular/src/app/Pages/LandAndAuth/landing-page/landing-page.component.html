@@ -1,0 +1,35 @@
+
+
+<div class="flex justify-center space-x-4 mb-4">
+    <button class="bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded">
+      Login
+    </button>
+    <button class="bg-green-500 hover:bg-green text-black font-bold py-2 px-4 rounded">
+      Register
+    </button>
+    <button class="bg-red-500 hover:bg-red-700 text-black font-bold py-2 px-4 rounded animate-ping">
+      SOS
+    </button>
+  </div>
+
+
+
+<div class="testimonial-container">
+    <div style="display: flex; animation: slide 40s linear infinite;">
+      <mat-card *ngFor="let i of [1,2,3,4,5]" class="testimonial-card">
+        <mat-card-header>
+          <mat-card-title>User {{i}}</mat-card-title>
+          <mat-card-subtitle>Customer</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content style="background-color: black">
+          <p>
+            "This service has been absolutely amazing! The support team is incredibly responsive,
+            and the features are exactly what I needed. I've been using it for 6 months now,
+            and it has significantly improved my workflow. Highly recommended!"
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+</div>
+
+

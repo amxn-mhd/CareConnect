@@ -9,8 +9,12 @@ import { GoodHealthComponent } from './Pages/Functions_mentalHealth/good-health/
 import { AverageHealthComponent } from './Pages/Functions_mentalHealth/average-health/average-health.component';
 import { BadHealthComponent } from './Pages/Functions_mentalHealth/bad-health/bad-health.component';
 import { HomeComponent } from './Pages/home/home.component';
+import { LandingPageComponent } from './Pages/LandAndAuth/landing-page/landing-page.component';
 
 export const routes: Routes = [
+  { path: '', redirectTo: 'landing-page', pathMatch: 'full' },  // Redirect to a valid path
+  {path:'landing-page', component:LandingPageComponent},
+
   {path:'home', component:HomeComponent ,children:[  
     { path: 'service', component: ServiceComponent },
 ]},
@@ -26,8 +30,7 @@ export const routes: Routes = [
   },
   { path: 'wellbeing', component: WellbeingComponent },
   { path: 'safety', component: SafetyComponent },
-  { path: '', redirectTo: '/', pathMatch: 'full' },  // Redirect to a valid path
-  { path: '**', redirectTo: 'Service' }  
+  { path: '**', redirectTo: 'home' }  
 ];
 
 //optional....
