@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CareConnect.Services.MentelHealthApi.Migrations
 {
     [DbContext(typeof(MentelHealthApiContext))]
-    partial class MentelHealthApiContextModelSnapshot : ModelSnapshot
+    [Migration("20241115165711_apply")]
+    partial class apply
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -49,19 +52,13 @@ namespace CareConnect.Services.MentelHealthApi.Migrations
 
             modelBuilder.Entity("CareConnect.Services.MentelHealthApi.Models.MoodTracker", b =>
                 {
-                    b.Property<int>("EntryId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EntryId"));
+                    b.Property<DateOnly>("DateTimeOfEntry")
+                        .HasColumnType("date")
+                        .HasColumnName("EntryDate");
 
                     b.Property<string>("CurrentMood")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
-
-                    b.Property<DateOnly>("DateTimeOfEntry")
-                        .HasColumnType("date")
-                        .HasColumnName("EntryDate");
 
                     b.Property<int?>("DoctorID")
                         .HasColumnType("int");
@@ -77,7 +74,7 @@ namespace CareConnect.Services.MentelHealthApi.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.HasKey("EntryId");
+                    b.HasKey("DateTimeOfEntry");
 
                     b.ToTable("MoodTrackers");
                 });

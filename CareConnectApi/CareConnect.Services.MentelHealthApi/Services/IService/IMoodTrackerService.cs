@@ -6,11 +6,13 @@ namespace CareConnect.Services.MentelHealthApi.Services.IService
     {
         IEnumerable<MoodTracker> GetUserMoodLog();
 
+        IEnumerable<MoodTracker> GetUsersByDoctor(int docId);
+
         bool AddUserMoodLog(MoodTracker userMoodLog);
 
-        bool UpdateUserMoodLog(int id, DateOnly date);
+        bool UpdateUserMoodLog(MoodTracker userMoodLog);
 
-        bool DeleteUserMoodLog(DateOnly date);
+        bool DeleteUserMoodLog(int id ,DateOnly date);
 
 
 

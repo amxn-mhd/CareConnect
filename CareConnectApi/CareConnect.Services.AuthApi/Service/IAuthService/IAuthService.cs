@@ -2,10 +2,10 @@
 {
     public interface IAuthService
     {
-        Task<string> Register(RegistrationRequestDto registrationRequestDto);
-        Task<LoginResponseDto> Login(LoginRequestDto loginRequestDto);
+        //Task<string> Register(RegistrationRequestDto registrationRequestDto);
+        //Task<LoginResponseDto> Login(LoginRequestDto loginRequestDto);
 
-        // this is for role management/.
-        Task<bool> AssignRole(string email, string rolename);
+        //// this is for role management/.
+        //Task<bool> AssignRole(string email, string rolename);
     }
 }

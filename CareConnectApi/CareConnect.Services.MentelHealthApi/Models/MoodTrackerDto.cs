@@ -5,7 +5,7 @@ namespace CareConnect.Services.MentelHealthApi.Models
 {
     public class MoodTrackerDto
     {
-        [Key]
+        
         [Required]
         [Column("EntryDate")]
         public DateOnly DateTimeOfEntry { get; set; }
@@ -19,6 +19,9 @@ namespace CareConnect.Services.MentelHealthApi.Models
 
         [Range(0, 100)]
         public int Score { get; set; }
+
+        [MaxLength(50)]
+        public string? CurrentMood { get; set; }
 
     }
 }

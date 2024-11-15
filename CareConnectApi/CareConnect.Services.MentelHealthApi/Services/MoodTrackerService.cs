@@ -1,5 +1,6 @@
 ﻿using CareConnect.Services.MentelHealthApi.Models;
 using CareConnect.Services.MentelHealthApi.Services.IService;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CareConnect.Services.MentelHealthApi.Services
 {
@@ -12,39 +13,93 @@ namespace CareConnect.Services.MentelHealthApi.Services
             _db = db;
         }
 
-        public IEnumerable<MoodTracker> GetUserMoodLog()
+        public IEnumerable<MoodTracker> GetUserMoodLog()// get whole data 
         {
             return _db.MoodTrackers.ToList();
         }
 
-       public  bool AddUserMoodLog(MoodTracker userMoodLog)
+        public bool AddUserMoodLog(MoodTracker userMoodLog)
         {
-            if (userMoodLog != null)
+            try
             {
-                _db.MoodTrackers.Add(userMoodLog);
+                var result = _db.MoodTrackers.FirstOrDefault(u => u.DateTimeOfEntry == userMoodLog.DateTimeOfEntry && u.UserId == userMoodLog.UserId);
+                if (result == null)
+                {
+                    _db.MoodTrackers.Add(userMoodLog);
+                   
+                }
+                else
+                {
+                    result.CurrentMood = userMoodLog.CurrentMood;
+                    result.DateTimeOfEntry = userMoodLog.DateTimeOfEntry;
+                    result.UserId = userMoodLog.UserId;
+                    result.Name = userMoodLog.Name;
+                    result.Score = userMoodLog.Score;
+                    result.DoctorID = userMoodLog.DoctorID;
+                }
                 _db.SaveChanges();
                 return true;
+
             }
-            return false;
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error while adding/updating user mood log: {ex.Message}");
+
+                return false;
+            }
+
         }
 
-        public bool DeleteUserMoodLog(DateOnly date)
+        public bool DeleteUserMoodLog(int id, DateOnly date)// add also userid 
         {
-            if (date != DateOnly.MinValue)
+            try
             {
-                var result = _db.MoodTrackers.FirstOrDefault(u => u.DateTimeOfEntry == date);
-                if (result != null)
+                if (date != DateOnly.MinValue)
                 {
-                    _db.MoodTrackers.Remove(result);
-                    return true;
+                    var result = _db.MoodTrackers.FirstOrDefault(u => u.DateTimeOfEntry == date && u.UserId == id);
+                    if (result != null)
+                    {
+                        _db.MoodTrackers.Remove(result);
+                        return true;
+                    }
                 }
             }
+            catch (Exception ex) { Console.WriteLine(ex.ToString()); return false; }
             return false;
         }
 
-        public bool UpdateUserMoodLog(int id, DateOnly date)
+        public bool UpdateUserMoodLog(MoodTracker moodTracker)
         {
-            throw new NotImplementedException();
+            var result = _db.MoodTrackers.FirstOrDefault(u => u.DateTimeOfEntry == moodTracker.DateTimeOfEntry && u.UserId == moodTracker.UserId);
+            
+            if (result != null)
+            {
+                try
+                {
+                    result.CurrentMood = moodTracker.CurrentMood;
+                    result.DateTimeOfEntry = moodTracker.DateTimeOfEntry;
+                    result.UserId = moodTracker.UserId;
+                    result.Name = moodTracker.Name;
+                    result.Score = moodTracker.Score;
+                    result.DoctorID = moodTracker.DoctorID;
+                    _db.SaveChanges();
+                    return true;
+                }
+                catch { return false; }
+            }
+            else
+            {
+                return false;
+            }
+
         }
+        public IEnumerable<MoodTracker> GetUsersByDoctor(int docId)
+        {
+            var result = _db.MoodTrackers.Where(u => u.DoctorID == docId).ToList();
+
+            return result;
+
+        }
+
     }
 }

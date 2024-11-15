@@ -27,25 +27,59 @@ namespace CareConnect.Services.MentelHealthApi.Controllers
 
         // GET: api/MoodTrackers
         [HttpGet]
-        public async Task<IActionResult> GetMoodTracker()
+        public IActionResult GetMoodTracker()
         {
-            var result = _mTService.GetUserMoodLog();
+            var result = _mTService.GetUserMoodLog();//getall
             return Ok(result);
         }
 
-        [HttpGet("getMoodData")]
-        public async Task<IActionResult> GetMood()
+      
+
+
+        // POST: api/MoodTrackers
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPost]
+        public async Task<IActionResult> PostMoodTracker(MoodTracker moodTracker)// post whole data 
         {
-            var result = _mTDtoService.GetUserMood();
+            var result = _mTService.AddUserMoodLog(moodTracker);
+
             return Ok(result);
         }
 
-
-        // GET: api/MoodTrackers/5
-        [HttpGet("{Date}")]
-        public async Task<IActionResult> GetMoodByDate(DateOnly Date)
+        // DELETE: api/MoodTrackers/5
+        [HttpDelete("{id,Date}")]
+        public async Task<IActionResult> DeleteMoodTracker(int id , DateOnly Date)// delete whole .
         {
-            var moodTracker = _mTDtoService.GetUserMoodByDate(Date);
+            var res = _mTService.DeleteUserMoodLog(id, Date);
+            if (res == null)
+            {
+                return NotFound();
+            }
+            return Ok(res);
+
+        }
+
+
+        [HttpGet("getMoodDataByUserID")] 
+        public IActionResult GetMood(int userid)
+        {
+            var result = _mTDtoService.GetUserMood(userid);
+            return Ok(result);
+        }
+        
+
+        [HttpGet("GetUsersByDoctor")]
+        public IActionResult GetUsersByDoc(int docid)
+        {
+            var result = _mTService.GetUsersByDoctor(docid);
+            return Ok(result);
+        }
+
+        // GET: api/MoodTrackers/5  
+        [HttpGet("{userid, Date}")]
+        public IActionResult GetMoodByDate(int userid,DateOnly Date)
+        {
+            var moodTracker = _mTDtoService.GetUserMoodByDate(userid,Date);
 
             if (moodTracker == null)
             {
@@ -56,37 +90,7 @@ namespace CareConnect.Services.MentelHealthApi.Controllers
         }
 
 
-        // POST: api/MoodTrackers
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<IActionResult> PostMoodTracker(MoodTracker moodTracker)
-        {
-            var result = _mTService.AddUserMoodLog(moodTracker);
 
-            return Ok(result);
-        }
 
-        // DELETE: api/MoodTrackers/5
-        [HttpDelete("{Date}")]
-        public async Task<IActionResult> DeleteMoodTracker(DateOnly Date)
-        {
-            var res = _mTService.DeleteUserMoodLog(Date);
-            if (res == null)
-            {
-                return NotFound();
-            }
-            return Ok(res);
-
-        }
-
-        [HttpGet("GetByUser")]
-        public async Task<IActionResult> GetUsersMood(int id)
-        {
-            var res =  _mTDtoService.GetUserMoodsByID(id);
-
-            return Ok(res);
-
-        }
-        
     }
 }

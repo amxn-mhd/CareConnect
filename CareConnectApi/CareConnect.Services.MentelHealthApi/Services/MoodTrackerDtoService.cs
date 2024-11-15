@@ -20,26 +20,19 @@ namespace CareConnect.Services.MentelHealthApi.Services
     {
         return _mapper.Map<MoodTrackerDto>(moodTracker);
     }
-        public IEnumerable<MoodTrackerDto> GetUserMood()
+        public IEnumerable<MoodTrackerDto> GetUserMood(int id)
         {
-            var result = _db.MoodTrackers.ToList();
+            var result = _db.MoodTrackers.Where(i => i.UserId == id).ToList();
             return _mapper.Map<IEnumerable< MoodTrackerDto >> (result);
         }
         
-
-        
-
-        public MoodTrackerDto GetUserMoodByDate(DateOnly date)
+        public MoodTrackerDto GetUserMoodByDate(int id , DateOnly date)
         {
-            var result=_db.MoodTrackers.FirstOrDefault(i =>i.DateTimeOfEntry==date);
+            var result=_db.MoodTrackers.FirstOrDefault(i =>i.DateTimeOfEntry==date && i.UserId==id);
             return _mapper.Map<MoodTrackerDto>(result);
         }
 
-        public IEnumerable<MoodTrackerDto> GetUserMoodsByID(int id)
-        {
-            var result = _db.MoodTrackers.Where(i => i.UserId == id).ToList();
-            return _mapper.Map<IEnumerable<MoodTrackerDto>>(result);
 
-        }
+        
     }
 }
