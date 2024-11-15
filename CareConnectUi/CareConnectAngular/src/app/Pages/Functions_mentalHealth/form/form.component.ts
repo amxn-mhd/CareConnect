@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,EventEmitter,Output} from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ScoremeterComponent } from "../scoremeter/scoremeter.component";
@@ -21,8 +21,8 @@ export class FormComponent {
     { text: 'How often do you feel positive about the future?', answer: '' },
     { text: 'How well can you concentrate on tasks?', answer: '' }
   ];
-  
-  score: number = 0;
+  @Output() calculatedScore = new EventEmitter<number>();
+   score: number = 0;
   showMeter: boolean = false;
 
   constructor(private router: Router) {}
@@ -32,7 +32,7 @@ export class FormComponent {
     const actualScore = this.questions.reduce((sum, q) => sum + Number(q.answer), 0);
     this.score = Math.round((actualScore / totalPossibleScore) * 100);
     this.showMeter = true;
-
+    this.calculatedScore .emit(this.score)
     setTimeout(() => {
       if (this.score >= 60) {
         this.router.navigate(['mental-health/good-health']);  
