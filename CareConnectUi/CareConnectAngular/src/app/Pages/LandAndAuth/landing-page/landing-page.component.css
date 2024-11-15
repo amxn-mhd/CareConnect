@@ -5,12 +5,26 @@
   body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
   }
+  .testimonial-container {
+    position: fixed; /* Use fixed if you want it to stay in place on scroll */
+    bottom: 10%; /* Positions the container 10% from the bottom */
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
   
   .testimonial-card {
+    position: relative;
+    top: 0; /* Remove the top 50% here to avoid vertical centering */
     min-width: 300px;
     margin: 0 16px;
-    background: black;
+    background: white;
   }
+  
+  
   
   .sos-button {
     position: fixed;
@@ -36,12 +50,7 @@
     transition: all 0.3s ease;
   }
   
-  .testimonial-container {
-    overflow: hidden;
-    position: relative;
-    padding: 20px 0;
-  }
-  
+
   
   .mat-mdc-form-field {
     font-size: 14px;
@@ -54,5 +63,5 @@
     z-index: 1000;
   }
   mat-card{
-    background-color: black;
+    background-color:white;
   }

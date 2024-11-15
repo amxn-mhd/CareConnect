@@ -13,5 +13,10 @@ import { FormsModule } from '@angular/forms';
 })
 export class MentalHealthComponent {
 //  var x=[score]
+   updatedscore:number=0;
+
+   updateScore(score:number){
+    this.updatedscore=score;
+   }
 
 }

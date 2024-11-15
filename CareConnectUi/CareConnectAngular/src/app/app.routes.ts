@@ -10,14 +10,16 @@ import { AverageHealthComponent } from './Pages/Functions_mentalHealth/average-h
 import { BadHealthComponent } from './Pages/Functions_mentalHealth/bad-health/bad-health.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { LandingPageComponent } from './Pages/LandAndAuth/landing-page/landing-page.component';
+import { LoginComponent } from './Pages/LandAndAuth/login/login.component';
+import { RegisterComponent } from './Pages/LandAndAuth/register/register.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'landing-page', pathMatch: 'full' },  // Redirect to a valid path
   {path:'landing-page', component:LandingPageComponent},
-
+  {path:'login',component:LoginComponent},
+  {path:'register',component:RegisterComponent},
   {path:'home', component:HomeComponent ,children:[  
-    { path: 'service', component: ServiceComponent },
-]},
+    { path: 'service', component: ServiceComponent },]},
   {
     path: 'mental-health', component: MentalHealthComponent, children: [
       { path: '', redirectTo: 'form', pathMatch: 'full' },  // Redirect to a valid path
