@@ -8,8 +8,7 @@ namespace CareConnect.Services.WellBeingApi.Services.IService
 
         bool AddUserReminderLog(ReminderScheduler userReminderLog);
 
-        bool UpdateUserReminderLog(int id, DateOnly date);
 
-        bool DeleteUserReminderLog(DateOnly date);
+        bool DeleteUserReminderLog(int id , DateOnly date);
     }
 }

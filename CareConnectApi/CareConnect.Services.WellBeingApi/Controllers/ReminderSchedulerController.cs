@@ -20,38 +20,24 @@ namespace CareConnect.Services.WellBeingApi.Controllers
             _rTDtoService = reminderSchedulerDtoService;
         }
 
-        // GET: api/MoodTrackers
-        [HttpGet]
-        public async Task<IActionResult> GetReminderTracker()
+        [HttpGet("getAll")]
+        public async Task<IActionResult> GetReminderTracker() //get all 
         {
             var result = _rTService.GetUserReminderLog();
             return Ok(result);
         }
 
         [HttpGet("getReminderData")]
-        public async Task<IActionResult> GetReminder()
+        public async Task<IActionResult> GetReminder(int userid ,DateOnly date) // dto get only required .
         {
-            var result = _rTDtoService.GetUserReminder();
+            var result = _rTDtoService.GetUserReminderByUser(userid,date);
             return Ok(result);
         }
 
 
-        // GET: api/SleepAnalyser/5
-        [HttpGet("{Date}")]
-        public async Task<IActionResult> GetReminderByDate(DateOnly Date)
-        {
-            var reminderScheduler = _rTDtoService.GetUserReminderByDate(Date);
-
-            if (reminderScheduler == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(reminderScheduler);
-        }
+      
 
 
-        // POST: api/SleepAnalyser
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<IActionResult> PostReminderTracker(ReminderScheduler reminderScheduler)
@@ -63,9 +49,9 @@ namespace CareConnect.Services.WellBeingApi.Controllers
 
         // DELETE: api/SleepAnalyser/5
         [HttpDelete("{Date}")]
-        public async Task<IActionResult> DeleteReminderAnalyser(DateOnly Date)
+        public async Task<IActionResult> DeleteReminderAnalyser(int id,DateOnly Date)
         {
-            var res = _rTService.DeleteUserReminderLog(Date);
+            var res = _rTService.DeleteUserReminderLog(id ,Date);
             if (res == null)
             {
                 return NotFound();

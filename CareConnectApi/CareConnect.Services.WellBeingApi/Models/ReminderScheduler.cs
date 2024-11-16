@@ -6,6 +6,8 @@ namespace CareConnect.Services.WellBeingApi.Models
     public class ReminderScheduler
     {
         [Key]
+        public int Totalreminders { get; set; }
+        
         [Required]
         [Column("EntryDate")]
 
@@ -15,7 +17,7 @@ namespace CareConnect.Services.WellBeingApi.Models
         public int UserId { get; set; }
 
         [MaxLength(100)]
-        public string Title { get; set; }
+        public string Task { get; set; }
 
         [Required]
         public TimeOnly Time { get; set; }

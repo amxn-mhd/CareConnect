@@ -12,51 +12,38 @@ namespace CareConnect.Services.WellBeingApi.Controllers
     [ApiController]
     public class SleepAnalyserController : ControllerBase
     {
-        private readonly ISleepAnalyserDtoService _sTDtoService;
         private readonly ISleepAnalyserService _sTService;
         private object _stService;
 
-        public SleepAnalyserController(ISleepAnalyserService sleepAnalyserService, ISleepAnalyserDtoService sleepAnalyserDtoService)
+        public SleepAnalyserController(ISleepAnalyserService sleepAnalyserService)
         {
             _sTService = sleepAnalyserService;
-            _sTDtoService = sleepAnalyserDtoService;
         }
 
         // GET: api/MoodTrackers
         [HttpGet]
-        public async Task<IActionResult> GetSleepTracker()
+        public async Task<IActionResult> GetSleepTrack(int userid)// get all 
         {
-            var result = _sTService.GetUserSleepLog();
-            return Ok(result);
-        }
-
-        [HttpGet("getSleepData")]
-        public async Task<IActionResult> GetSleep()
-        {
-            var result = _sTDtoService.GetUserSleep();
-            return Ok(result);
-        }
-
-
-        // GET: api/SleepAnalyser/5
-        [HttpGet("{Date}")]
-        public async Task<IActionResult> GetSleepByDate(DateOnly Date)
-        {
-            var sleepAnalyser = _sTDtoService.GetUserSleepByDate(Date);
-
-            if (sleepAnalyser == null)
+            var result = _sTService.GetUserSleepLog(userid);
+            if (result != null)
             {
-                return NotFound();
+                return Ok(result);
             }
+            return NotFound();
+        }
 
-            return Ok(sleepAnalyser);
+        [HttpGet("{userid}/{date}")]
+        public async Task<IActionResult> GetSleepData(int userid,DateOnly date)// get all 
+        {
+            var result = _sTService.GetDataByUserDate(userid,date);
+            return Ok(result);
         }
 
 
         // POST: api/SleepAnalyser
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<IActionResult> PostSLeepTracker(SleepAnalyser sleepAnalyser)
+        public async Task<IActionResult> PostSLeepTracker(SleepAnalyser sleepAnalyser)//add or update 
         {
             var result = _sTService.AddUserSleepLog(sleepAnalyser);
 
@@ -64,10 +51,10 @@ namespace CareConnect.Services.WellBeingApi.Controllers
         }
 
         // DELETE: api/SleepAnalyser/5
-        [HttpDelete("{Date}")]
-        public async Task<IActionResult> DeleteSleepAnalyser(DateOnly Date)
+        [HttpDelete("{Date}")] 
+        public async Task<IActionResult> DeleteSleepAnalyser(int userid,DateOnly Date)//delete.
         {
-            var res = _sTService.DeleteUserSleepLog(Date);
+            var res = _sTService.DeleteUserSleepLog(userid,Date);
             if (res == null)
             {
                 return NotFound();

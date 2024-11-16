@@ -20,9 +20,10 @@ namespace CareConnect.Services.WellBeingApi.Services
         {
             return _mapper.Map<ReminderSchedulerDto>(reminderScheduler);
         }
-        public IEnumerable<ReminderSchedulerDto> GetUserReminder()
+        public IEnumerable<ReminderSchedulerDto> GetUserReminderByUser(int id , DateOnly date )
         {
-            var result = _db.ReminderScheduler.ToList();
+
+            var result = _db.ReminderScheduler.Where(i =>i.UserId==id && i.DateTimeOfEntry==date).ToList();
             return _mapper.Map<IEnumerable<ReminderSchedulerDto>>(result);
         }
 

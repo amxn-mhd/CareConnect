@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CareConnect.Services.WellBeingApi.Migrations
 {
     [DbContext(typeof(WellBeingApiContext))]
-    partial class SleepAnalyserApiContextModelSnapshot : ModelSnapshot
+    [Migration("20241115191344_updatereminder")]
+    partial class updatereminder
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,12 +54,6 @@ namespace CareConnect.Services.WellBeingApi.Migrations
 
             modelBuilder.Entity("CareConnect.Services.WellBeingApi.Models.SleepAnalyser", b =>
                 {
-                    b.Property<int>("EntryId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EntryId"));
-
                     b.Property<DateOnly>("DateTimeOfEntry")
                         .HasColumnType("date")
                         .HasColumnName("EntryDate");
@@ -72,7 +69,7 @@ namespace CareConnect.Services.WellBeingApi.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.HasKey("EntryId");
+                    b.HasKey("DateTimeOfEntry");
 
                     b.ToTable("SleepAnalyser");
                 });

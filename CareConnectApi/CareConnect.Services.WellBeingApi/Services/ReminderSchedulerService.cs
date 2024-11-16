@@ -1,5 +1,6 @@
 ﻿using CareConnect.Services.WellBeingApi.Models;
 using CareConnect.Services.WellBeingApi.Services.IService;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CareConnect.Services.WellBeingApi.Services
 {
@@ -12,27 +13,54 @@ namespace CareConnect.Services.WellBeingApi.Services
             _db = db;
         }
 
-        public IEnumerable<ReminderScheduler> GetUserReminderLog()
+        public IEnumerable<ReminderScheduler> GetUserReminderLog()//get all 
         {
             return _db.ReminderScheduler.ToList();
         }
 
         public bool AddUserReminderLog(ReminderScheduler userReminderLog)
         {
-            if (userReminderLog != null)
+            if (userReminderLog == null)
             {
-                _db.ReminderScheduler.Add(userReminderLog);
-                _db.SaveChanges();
-                return true;
+                return false; // Return false if input is invalid
             }
-            return false;
+
+            try
+            {
+                // Check if a matching record already exists
+                var existingLog = _db.ReminderScheduler
+                    .FirstOrDefault(u => u.DateTimeOfEntry == userReminderLog.DateTimeOfEntry && u.UserId == userReminderLog.UserId);
+
+                if (existingLog == null)
+                {
+                    _db.ReminderScheduler.Add(userReminderLog);
+                }
+                else
+                {
+                    // Update the existing record
+                   
+                    existingLog.Task = userReminderLog.Task;
+                    existingLog.Time = userReminderLog.Time;
+                }
+
+                // Save changes to the database
+                _db.SaveChanges();
+
+                return true; // Indicate success
+            }
+            catch (Exception ex)
+            {
+                // Log exception for debugging (replace with proper logging in production)
+                Console.WriteLine($"Error: {ex.Message}");
+                return false; // Indicate failure
+            }
         }
 
-        public bool DeleteUserReminderLog(DateOnly date)
+        public bool DeleteUserReminderLog(int id , DateOnly date)// delete .
         {
             if (date != DateOnly.MinValue)
             {
-                var result = _db.ReminderScheduler.FirstOrDefault(u => u.DateTimeOfEntry == date);
+                var result = _db.ReminderScheduler.FirstOrDefault(u => u.DateTimeOfEntry == date && u.UserId == id);
                 if (result != null)
                 {
                     _db.ReminderScheduler.Remove(result);
@@ -42,9 +70,6 @@ namespace CareConnect.Services.WellBeingApi.Services
             return false;
         }
 
-        public bool UpdateUserReminderLog(int id, DateOnly date)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

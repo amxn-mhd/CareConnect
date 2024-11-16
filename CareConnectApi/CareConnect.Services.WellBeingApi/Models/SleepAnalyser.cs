@@ -6,6 +6,8 @@ namespace CareConnect.Services.WellBeingApi.Models
     public class SleepAnalyser
     {
         [Key]
+        public int EntryId { get; set; }
+
         [Required]
         [Column("EntryDate")]
 

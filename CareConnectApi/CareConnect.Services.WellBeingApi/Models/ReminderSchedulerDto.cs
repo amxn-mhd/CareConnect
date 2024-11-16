@@ -6,17 +6,8 @@ namespace CareConnect.Services.WellBeingApi.Models
     public class ReminderSchedulerDto
     {
 
-        [Key]
-        [Required]
-        [Column("EntryDate")]
-
-        public DateOnly DateTimeOfEntry { get; set; }
-
-        [Required]
-        public int UserId { get; set; }
-
         [MaxLength(100)]
-        public string Title { get; set; }
+        public string Task { get; set; }
 
         [Required]
         public TimeOnly Time { get; set; }

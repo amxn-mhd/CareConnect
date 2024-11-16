@@ -4,11 +4,9 @@ namespace CareConnect.Services.WellBeingApi.Services.IService
 {
     public interface IReminderSchedulerDtoService
     {
-        IEnumerable<ReminderSchedulerDto> GetUserReminder();
 
-        IEnumerable<ReminderSchedulerDto> GetUserReminderByID(int id);
+        IEnumerable<ReminderSchedulerDto> GetUserReminderByUser(int id,DateOnly date);
 
-        ReminderSchedulerDto GetUserReminderByDate(DateOnly date);
         
     }
 }

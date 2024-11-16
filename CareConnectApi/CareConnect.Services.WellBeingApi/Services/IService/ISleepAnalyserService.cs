@@ -6,12 +6,14 @@ namespace CareConnect.Services.WellBeingApi.Services.IService
 {
     public interface ISleepAnalyserService
     {
-        IEnumerable<SleepAnalyser> GetUserSleepLog();
+        IEnumerable<SleepAnalyser> GetUserSleepLog(int userid);//getAll(id)
+
+        SleepAnalyser GetDataByUserDate(int userid,DateOnly date);//get(date)
 
         bool AddUserSleepLog(SleepAnalyser userSleepLog);
 
-        bool UpdateUserSleepLog(int id, DateOnly date);
+        //bool UpdateUserSleepLog(SleepAnalyser userSleepLog);
 
-        bool DeleteUserSleepLog(DateOnly date);
+        bool DeleteUserSleepLog(int userid,DateOnly date);
     }
 }

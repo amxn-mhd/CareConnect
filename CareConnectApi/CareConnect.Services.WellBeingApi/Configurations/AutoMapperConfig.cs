@@ -8,7 +8,6 @@ namespace CareConnect.Services.MentelHealthApi.Configurations
     {
         public AutoMapperConfig() 
         {
-            CreateMap <SleepAnalyser, SleepAnalyserDto>();
             CreateMap<ReminderScheduler, ReminderSchedulerDto>();
         }
      
