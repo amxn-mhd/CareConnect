@@ -1,5 +1,7 @@
 ﻿using CareConnect.Services.SafetyApi.Models;
 using CareConnect.Services.SafetyApi.Services.IService;
+using Microsoft.EntityFrameworkCore;
+
 //using CareConnect.Services.WellBeingApi.Models;
 //using CareConnect.Services.WellBeingApi.Services.IService;
 using System.Collections.Generic;
@@ -15,9 +17,20 @@ namespace CareConnect.Services.SafetyApi.Services
             _db = db;
         }
 
-        public IEnumerable<ReportIncident> GetUserReportLog()
+        public async Task<IEnumerable<ReportIncident>> GetUserReportLog()
         {
-            return _db.ReportIncident.ToList();
+            try
+            {
+                return await _db.ReportIncident.ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error accessing data: {ex.Message}");
+
+                Console.WriteLine($"Stack Trace: {ex.StackTrace}");
+            }
+            return null;
+
         }
 
         public bool AddUserReportLog(ReportIncident userReportLog)
@@ -31,23 +44,73 @@ namespace CareConnect.Services.SafetyApi.Services
             return false;
         }
 
-        public bool DeleteUserReportLog(DateOnly date)
+
+        // logic changes from hear. 
+
+        public  bool DeleteUserReportLog( int userid, DateOnly date)
         {
-            if (date != DateOnly.MinValue)
+            try
             {
-                var result = _db.ReportIncident.FirstOrDefault(u => u.DateTimeOfEntry == date);
-                if (result != null)
+                if (date != DateOnly.MinValue)
                 {
-                    _db.ReportIncident.Remove(result);
-                    return true;
+                    var result = _db.ReportIncident.FirstOrDefault(u => u.DateTimeOfEntry == date && u.UserId == userid);
+                    if (result != null)
+                    {
+                        _db.ReportIncident.Remove(result);
+                        _db.SaveChanges(); // Ensure changes are saved to the database
+                        return true;
+                    }
                 }
+                return false; // No matching record found
             }
-            return false;
+            catch (Exception ex)
+            {
+                // Log the exception for debugging (replace Console.WriteLine with proper logging in production)
+                Console.WriteLine($"Error occurred while deleting report incident: {ex.Message}");
+                Console.WriteLine($"Stack Trace: {ex.StackTrace}");
+
+                // Optionally, rethrow or handle the exception further
+                return false; // Indicate failure
+            }
         }
 
-        public bool UpdateUserReportLog(int id, DateOnly date)
+        public bool UpdateUserReportLog(int id, DateOnly date, ReportIncident updatedIncident)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var existingIncident = _db.ReportIncident
+                    .FirstOrDefault(i => i.UserId == id && i.DateTimeOfEntry == date);
+
+                if (existingIncident == null)
+                {
+                    return false;
+                }
+
+                if (!existingIncident.AuthorizeEdit)
+                {
+                    return false;
+                }
+
+                existingIncident.TypeOfAccident = updatedIncident.TypeOfAccident;
+                existingIncident.Location = updatedIncident.Location;
+                existingIncident.Time = updatedIncident.Time;
+                existingIncident.ShortDescription = updatedIncident.ShortDescription;
+
+                existingIncident.AuthorizeEdit = false;
+
+                _db.SaveChanges();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+                return false;
+            }
         }
+
+     
+
+       
     }
 }

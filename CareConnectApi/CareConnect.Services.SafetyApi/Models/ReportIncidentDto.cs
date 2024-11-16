@@ -24,7 +24,5 @@ namespace CareConnect.Services.SafetyApi.Models
         [Required]
         public TimeOnly Time { get; set; }
 
-        [MaxLength(100)]
-        public string ShortDescription { get; set; }
     }
 }

@@ -7,12 +7,12 @@ namespace CareConnect.Services.SafetyApi.Services.IService
 {
     public interface IReportIncidentService
     {
-        IEnumerable<ReportIncident> GetUserReportLog();
+        Task<IEnumerable<ReportIncident>> GetUserReportLog();
 
         bool AddUserReportLog(ReportIncident userReportLog);
 
-        bool UpdateUserReportLog(int id, DateOnly date);
+        bool UpdateUserReportLog(int id, DateOnly date,ReportIncident updatdincident);
 
-        bool DeleteUserReportLog(DateOnly date);
+        bool DeleteUserReportLog(int id , DateOnly date);
     }
 }

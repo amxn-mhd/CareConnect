@@ -6,6 +6,9 @@ namespace CareConnect.Services.SafetyApi.Models
     public class ReportIncident
     {
         [Key]
+        public  int  IncidentId { get; set; }
+
+
         [Required]
         [Column("EntryDate")]
 
@@ -27,8 +30,9 @@ namespace CareConnect.Services.SafetyApi.Models
         public string ShortDescription { get; set; }
 
 
-        
+        public bool AuthorizeEdit { get; set; } = true;
 
-        
+
+
     }
 }

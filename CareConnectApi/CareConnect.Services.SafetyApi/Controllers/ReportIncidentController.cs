@@ -26,32 +26,10 @@ namespace CareConnect.Services.SafetyApi.Controllers
 
         // GET: api/MoodTrackers
         [HttpGet]
-        public async Task<IActionResult> GetReportTracker()
+        public async Task<IActionResult> GetReportLog()// all user data 
         {
-            var result = _rTService.GetUserReportLog();
+            var result = await _rTService.GetUserReportLog();
             return Ok(result);
-        }
-
-        [HttpGet("getReportData")]
-        public async Task<IActionResult> GetReport()
-        {
-            var result = _rTDtoService.GetUserReport();
-            return Ok(result);
-        }
-
-
-        // GET: api/SleepAnalyser/5
-        [HttpGet("{Date}")]
-        public async Task<IActionResult> GetReportByDate(DateOnly Date)
-        {
-            var reportIncident = _rTDtoService.GetUserReportByDate(Date);
-
-            if (reportIncident == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(reportIncident);
         }
 
 
@@ -67,9 +45,9 @@ namespace CareConnect.Services.SafetyApi.Controllers
 
         // DELETE: api/SleepAnalyser/5
         [HttpDelete("{Date}")]
-        public async Task<IActionResult> DeleteReportAnalyser(DateOnly Date)
+        public async Task<IActionResult> DeleteReportAnalyser(int userid, DateOnly Date, ReportIncident updatdincident)
         {
-            var res = _rTService.DeleteUserReportLog(Date);
+            var res = _rTService.UpdateUserReportLog(userid, Date, updatdincident);
             if (res == null)
             {
                 return NotFound();
@@ -77,5 +55,48 @@ namespace CareConnect.Services.SafetyApi.Controllers
             return Ok(res);
 
         }
+
+
+        [HttpPut("updateReport")]
+        public async Task<IActionResult> PutReportData(int userid, DateOnly Date)
+        {
+            var res = _rTService.DeleteUserReportLog(userid, Date);
+            if (res == null)
+            {
+                return NotFound();
+            }
+            return Ok(res);
+
+        }
+
+
+        //dtos Actions 
+
+        [HttpGet("getReportData")]
+        public async Task<IActionResult> GetReport(int userid )//perticular user data 
+        {
+            var result = _rTDtoService.GetUserEventData(userid);
+            return Ok(result);
+        }
+
+
+        // GET: api/SleepAnalyser/5
+        [HttpGet("{Date}")]
+        public async Task<IActionResult> GetReportByDate(int userid ,DateOnly Date)
+        {
+            var reportIncident = _rTDtoService.GetUserEventByDate(userid,Date);
+
+            if (reportIncident == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(reportIncident);
+        }
+
+
+       
+
+
     }
 }

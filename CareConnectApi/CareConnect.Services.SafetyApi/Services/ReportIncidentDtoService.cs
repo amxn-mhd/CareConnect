@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CareConnect.Services.SafetyApi.Models;
 using CareConnect.Services.SafetyApi.Services.IService;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace CareConnect.Services.SafetyApi.Services
@@ -21,26 +22,32 @@ namespace CareConnect.Services.SafetyApi.Services
             {
                 return _mapper.Map<ReportIncidentDto>(reportIncident);
             }
-            public IEnumerable<ReportIncidentDto> GetUserReport()
+
+
+         public async Task<IEnumerable<ReportIncidentDto>> GetUserEventByDate(int id, DateOnly date)
+        {
+            try
             {
-                var result = _db.ReportIncident.ToList();
+                var result = await _db.ReportIncident.Where(i => i.DateTimeOfEntry == date && i.UserId == id).ToListAsync();
                 return _mapper.Map<IEnumerable<ReportIncidentDto>>(result);
             }
-
-
-
-
-            public ReportIncidentDto GetUserReportByDate(DateOnly date)
+            catch
             {
-                var result = _db.ReportIncident.FirstOrDefault(i => i.DateTimeOfEntry == date);
-                return _mapper.Map<ReportIncidentDto>(result);
+                return null;
             }
+        }
 
-            public IEnumerable<ReportIncidentDto> GetUserReportByID(int id)
+            public  async Task<IEnumerable<ReportIncidentDto>>GetUserEventData(int id)
             {
-                var result = _db.ReportIncident.Select(i => i.UserId == id);
+            try
+            {
+                var result = await _db.ReportIncident.Where(i => i.UserId == id).ToListAsync();
                 return _mapper.Map<IEnumerable<ReportIncidentDto>>(result);
-
+            }
+            catch(Exception ex)
+            {
+                return null;
+            }
             }
         }
     }
