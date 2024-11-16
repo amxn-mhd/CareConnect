@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ServiceComponent } from "../service/service.component";
 import { FormsModule } from '@angular/forms';
+import { NavBarComponent } from "../dashboard/nav-bar/nav-bar.component";
 
 @Component({
   selector: 'app-mental-health',
   standalone: true,
-  imports: [FormsModule,RouterOutlet, CommonModule],
+  imports: [FormsModule, RouterOutlet, CommonModule, NavBarComponent],
   templateUrl: './mental-health.component.html',
   styleUrls: ['./mental-health.component.css'],
 })

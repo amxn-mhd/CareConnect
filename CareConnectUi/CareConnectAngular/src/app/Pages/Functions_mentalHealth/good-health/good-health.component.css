@@ -1,0 +1,35 @@
+.mood-container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .good-mood {
+    background-color: #ffffff;
+  }
+  
+  .good-mood h2 {
+    color: #00796b;
+  }
+  
+  .good-mood h3 {
+    color: #004d40;
+  }
+  
+  .good-mood blockquote {
+    font-style: italic;
+    color: #00796b;
+    border-left: 4px solid #004d40;
+    padding-left: 10px;
+    margin: 20px 0;
+  }
+  
+  .good-mood a {
+    color: #00796b;
+    text-decoration: none;
+  }
+  
+  .good-mood a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,53 @@
+.dashboard-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .upper-section {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .left-side,
+  .right-side {
+    flex: 1;
+  }
+  
+  .left-side {
+    max-width: 60%;
+  }
+  
+  .right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .wide-btn {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    width: 100%;
+  }
+  
+  .wide-btn:hover {
+    background-color: #0077ff;
+  }
+  
+  .lower-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  /* Optional: Styling for the mood analyser and reminders components to make them look neat */
+  .app-mood-analyser,
+  .app-reminders {
+    width: 100%;
+  }
+  

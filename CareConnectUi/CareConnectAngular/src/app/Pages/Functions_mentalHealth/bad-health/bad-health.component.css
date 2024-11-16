@@ -1,43 +1,44 @@
-.health-container {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  .urgent-message {
-    background-color: #ffebee;
-    padding: 15px;
-    border-radius: 4px;
-    margin: 20px 0;
-    color: #c62828;
-    font-weight: bold;
-  }
-  .resources {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 8px;
-  }
-  .links-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  a {
-    color: #2196F3;
-    text-decoration: none;
-    padding: 10px;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-  }
-  a:hover {
-    background-color: #f5f5f5;
-    transform: translateX(10px);
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  li {
-    margin: 10px 0;
-  }
+.mood-container {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bad-mood {
+  background-color: #ffebee;
+}
+
+.bad-mood h2 {
+  color: #d32f2f;
+}
+
+.bad-mood h3 {
+  color: #c62828;
+}
+
+.bad-mood blockquote {
+  font-style: italic;
+  color: #c62828;
+  border-left: 4px solid #d32f2f;
+  padding-left: 10px;
+  margin: 20px 0;
+}
+
+.bad-mood ul {
+  list-style-type: none;
+  color: black;
+  padding: 0;
+}
+
+.bad-mood ul li {
+  margin: 10px 0;
+}
+
+.bad-mood a {
+  color: #d32f2f;
+  text-decoration: none;
+}
+
+.bad-mood a:hover {
+  text-decoration: underline;
+}

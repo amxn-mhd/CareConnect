@@ -1,0 +1,122 @@
+/* General container styling */
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Use global background variable */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; /* Changed to white */
+  padding: 10px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a subtle shadow for separation */
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.sos-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sos-btn:hover {
+  background-color: darkred;
+}
+
+/* Form styling */
+.registration-form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.registration-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: darkblue;
+  text-align: center;
+}
+
+/* Row layout */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between columns */
+  margin-bottom: 15px;
+}
+
+/* Form group styling */
+.form-group {
+  flex: 1; /* Equal width for each column */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  flex: 2; /* Full-width for single-field rows */
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: darkblue;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 139, 0.3);
+}
+
+/* Required field indicator */
+.required {
+  color: red;
+  font-weight: bold;
+}
+
+/* Submit button styling */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: darkblue;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: navy;
+}

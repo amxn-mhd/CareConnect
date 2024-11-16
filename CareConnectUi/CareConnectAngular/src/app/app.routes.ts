@@ -12,13 +12,18 @@ import { HomeComponent } from './Pages/home/home.component';
 import { LandingPageComponent } from './Pages/LandAndAuth/landing-page/landing-page.component';
 import { LoginComponent } from './Pages/LandAndAuth/login/login.component';
 import { RegisterComponent } from './Pages/LandAndAuth/register/register.component';
+import { DashboardComponent } from './Pages/dashboard/dashboard.component';
+import { SleepAnalyserComponent } from './Pages/wellbeing/sleep-analyser/sleep-analyser.component';
+import { RemiderSchedulerComponent } from './Pages/wellbeing/remider-scheduler/remider-scheduler.component';
+import { EmergencyServicesComponent } from './Pages/safety/emergency-services/emergency-services.component';
+import { ReportIncidentComponent } from './Pages/safety/report-incident/report-incident.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'landing-page', pathMatch: 'full' },  // Redirect to a valid path
   {path:'landing-page', component:LandingPageComponent},
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
-  {path:'home', component:HomeComponent ,children:[  
+  {path:'dashboard', component:DashboardComponent ,children:[  
     { path: 'service', component: ServiceComponent },]},
   {
     path: 'mental-health', component: MentalHealthComponent, children: [
@@ -30,8 +35,13 @@ export const routes: Routes = [
       { path: 'bad-health', component: BadHealthComponent }
     ]
   },
+  
   { path: 'wellbeing', component: WellbeingComponent },
+  {path: 'sleep-analyser',component:SleepAnalyserComponent},
+  {path: 'reminder-scheduler',component:RemiderSchedulerComponent},
   { path: 'safety', component: SafetyComponent },
+  { path: 'report-incident', component: ReportIncidentComponent },
+  { path: 'emergency-services', component: EmergencyServicesComponent },
   { path: '**', redirectTo: 'home' }  
 ];
 

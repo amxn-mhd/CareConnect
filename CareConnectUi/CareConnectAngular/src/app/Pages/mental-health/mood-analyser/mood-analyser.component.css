@@ -1,0 +1,63 @@
+.mood-analyser {
+  padding: 20px;
+  background-color: #fff;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.mood-analyser h2 {
+  font-size: 24px;
+  color: darkblue;
+  margin-bottom: 10px;
+}
+
+.mood-analyser table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensures columns take equal width */
+}
+
+.mood-analyser table th,
+.mood-analyser table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  height: 40px; /* Fixed height for each row */
+  word-wrap: break-word; /* Prevent text overflow */
+}
+
+.mood-analyser table th {
+  background-color: #f4f4f4;
+  color: white;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.mood-analyser table td {
+  background-color: #fafafa;
+  text-align: center; /* Center align the table data */
+}
+
+/* Even rows with a different background color */
+.mood-analyser table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Scrollable tbody with a fixed height */
+.mood-analyser table tbody {
+  display: block;
+  max-height: 160px; /* Adjusted height for 4 rows */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.mood-analyser table thead, .mood-analyser table th {
+  position: sticky;
+  top: 0;
+  background-color: #007BFF; /* Blue background for header */
+  color: white;
+  z-index: 2; /* Ensures the header stays above body content */
+}

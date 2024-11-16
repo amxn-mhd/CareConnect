@@ -1,0 +1,39 @@
+<div class="form-container">
+    <h2>Report an Incident</h2>
+    <form (ngSubmit)="onSubmit()">
+      <!-- Type of Incident -->
+      <label for="type">Type of Incident:</label>
+      <select id="type" [(ngModel)]="incident.type" name="type" required>
+        <option value="" disabled>Select type</option>
+        <option *ngFor="let type of incidentTypes" [value]="type">{{ type }}</option>
+      </select>
+  
+      <!-- Location -->
+      <label for="location">Location:</label>
+      <input
+        id="location"
+        type="text"
+        [(ngModel)]="incident.location"
+        name="location"
+        placeholder="Enter location"
+        required
+      />
+  
+      <!-- Time -->
+      <label for="time">Time of Incident:</label>
+      <input id="time" type="time" [(ngModel)]="incident.time" name="time" required />
+  
+      <!-- Description -->
+      <label for="description">Short Description:</label>
+      <textarea
+        id="description"
+        [(ngModel)]="incident.description"
+        name="description"
+        placeholder="Provide a brief description of the incident"
+      ></textarea>
+  
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  

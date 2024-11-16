@@ -1,67 +1,145 @@
+/* General Styling */
+.landing-container {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; /* Changed to white */
+  padding: 10px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a subtle shadow for separation */
+}
 
-  
+.navbar .logo img {
+  height: 50px;
+}
 
-  body {
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-  }
-  .testimonial-container {
-    position: fixed; /* Use fixed if you want it to stay in place on scroll */
-    bottom: 10%; /* Positions the container 10% from the bottom */
-    left: 0;
-    right: 0;
-    overflow: hidden;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .testimonial-card {
-    position: relative;
-    top: 0; /* Remove the top 50% here to avoid vertical centering */
-    min-width: 300px;
-    margin: 0 16px;
-    background: white;
-  }
-  
-  
-  
-  .sos-button {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    transform: scale(1.2);
-  }
-  
-  .social-links a {
-    color: white;
-    margin: 0 16px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .social-links a:hover {
-    color: #ff4444;
-  }
-  
-  .nav-buttons:hover {
-    background-color: #ff4444 !important;
-    color: white !important;
-    transition: all 0.3s ease;
-  }
-  
+.sos-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
-  
-  .mat-mdc-form-field {
-    font-size: 14px;
-    width: 100%;
-  }
-  
-  .mat-toolbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  mat-card{
-    background-color:white;
-  }
+.sos-btn:hover {
+  background-color: darkred;
+}
+
+/* Welcome Section Styling */
+.welcome-section {
+  /* background-color: darkblue; */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.welcome-section h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.welcome-section p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.login-btn {
+  background-color: white;
+  color: darkblue;
+  border: 2px solid darkblue;
+}
+
+.login-btn:hover {
+  background-color: lightblue;
+}
+
+.register-btn {
+  background-color: #00b5e2;
+  color: white;
+  border: 2px solid #00b5e2;
+}
+
+.register-btn:hover {
+  background-color: #0077ff;
+}
+
+/* Testimonials Section Styling */
+.testimonials-section {
+  background-color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 36px;
+  color: darkblue;
+  margin-bottom: 30px;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  text-align: center;
+}
+
+.testimonial-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: darkblue;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer a {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
