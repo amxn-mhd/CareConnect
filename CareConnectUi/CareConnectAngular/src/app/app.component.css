@@ -2,7 +2,19 @@
 
 /* Additional styling */
 
+.app-container {
+  padding: 20px;
+  background-color: black;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
 
 /* ///footer  */
 

@@ -1,0 +1,22 @@
+<div class="location-container">
+    <h2>Your Current Location</h2>
+    
+    <div *ngIf="loading" class="loading">
+      Loading location details...
+    </div>
+  
+    <div *ngIf="error" class="error">
+      {{ error }}
+    </div>
+  
+    <div *ngIf="locationDetails && !loading" class="location-details">
+      <p class="p">{{ locationDetails.location }}, {{ locationDetails.city }}, 
+         {{ locationDetails.state }}, {{ locationDetails.country }}, 
+         {{ locationDetails.postcode }}</p>
+    </div>
+  
+    <button (click)="getCurrentLocation()" [disabled]="loading">
+      Refresh Location
+    </button>
+  </div>
+  

@@ -43,14 +43,14 @@ namespace CareConnect.Services.AuthApi.Service
     };
 
             // Retrieve user roles and add to claims
-            var roles = await userManager.GetRolesAsync(applicationUser);
-            if (roles != null)
-            {
-                foreach (var role in roles)
-                {
-                    claimList.Add(new Claim(ClaimTypes.Role, role));
-                }
-            }
+            //var roles = await userManager.GetRolesAsync(applicationUser);
+            //if (roles != null)
+            //{
+            //    foreach (var role in roles)
+            //    {
+            //        claimList.Add(new Claim(ClaimTypes.Role, role));
+            //    }
+            //}
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {
