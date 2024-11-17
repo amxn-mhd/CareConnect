@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { ServiceComponent } from "../service/service.component";
 import { FormsModule } from '@angular/forms';
 import { NavBarComponent } from "../dashboard/nav-bar/nav-bar.component";
 

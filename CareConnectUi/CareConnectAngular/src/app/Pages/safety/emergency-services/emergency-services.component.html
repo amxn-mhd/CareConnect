@@ -1,13 +1,15 @@
 <app-nav-bar></app-nav-bar>
 <div class="emergency-container">
-  
 
+  <!-- Search Bar -->
   <div class="search-bar">
     <input type="text" placeholder="Search location" class="search-input" />
     <button class="search-btn">Search</button>
   </div>
 
+  <!-- Tables Container -->
   <div class="tables-container">
+
     <!-- Nearby Hospitals -->
     <div class="table-wrapper">
       <h3>Nearby Hospitals</h3>
@@ -21,16 +23,10 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>City Hospital</td>
-            <td>123 Main St, YourCity</td>
-            <td>+1 555-1234</td>
-            <td><button class="call-btn">Call</button></td>
-          </tr>
-          <tr>
-            <td>HealthCare Plus</td>
-            <td>456 Elm St, YourCity</td>
-            <td>+1 555-5678</td>
+          <tr *ngFor="let hospital of hospitals">
+            <td>{{ hospital.name }}</td>
+            <td>{{ hospital.address }}</td>
+            <td>{{ hospital.contact }}</td>
             <td><button class="call-btn">Call</button></td>
           </tr>
         </tbody>
@@ -50,21 +46,16 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Central Police Station</td>
-            <td>101 Main St, YourCity</td>
-            <td>+1 555-9876</td>
-            <td><button class="call-btn">Call</button></td>
-          </tr>
-          <tr>
-            <td>Eastside Precinct</td>
-            <td>202 Elm St, YourCity</td>
-            <td>+1 555-5432</td>
+          <tr *ngFor="let station of policeStations">
+            <td>{{ station.name }}</td>
+            <td>{{ station.address }}</td>
+            <td>{{ station.contact }}</td>
             <td><button class="call-btn">Call</button></td>
           </tr>
         </tbody>
       </table>
     </div>
+
   </div>
 </div>
  <div class="app-container">

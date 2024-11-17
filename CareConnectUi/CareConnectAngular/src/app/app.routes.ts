@@ -3,7 +3,6 @@ import { MentalHealthComponent } from './Pages/mental-health/mental-health.compo
 import { WellbeingComponent } from './Pages/wellbeing/wellbeing.component';
 import { SafetyComponent } from './Pages/safety/safety.component';
 import { NgModule } from '@angular/core';
-import { ServiceComponent } from './Pages/service/service.component';
 import { FormComponent } from './Pages/Functions_mentalHealth/form/form.component';
 import { GoodHealthComponent } from './Pages/Functions_mentalHealth/good-health/good-health.component';
 import { AverageHealthComponent } from './Pages/Functions_mentalHealth/average-health/average-health.component';
@@ -23,8 +22,7 @@ export const routes: Routes = [
   {path:'landing-page', component:LandingPageComponent},
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
-  {path:'dashboard', component:DashboardComponent ,children:[  
-    { path: 'service', component: ServiceComponent },]},
+  {path:'dashboard', component:DashboardComponent},
   {
     path: 'mental-health', component: MentalHealthComponent, children: [
       { path: '', redirectTo: 'form', pathMatch: 'full' },  // Redirect to a valid path

@@ -1,20 +1,12 @@
 import { Component, NgModule } from '@angular/core';
 import { NavBarComponent } from "../../dashboard/nav-bar/nav-bar.component";
-<<<<<<< HEAD
-import { LocationComponent } from '../location/location.component';
-=======
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
->>>>>>> 690426b2be454d32858958ce829216e4991eb785
 
 @Component({
   selector: 'app-emergency-services',
   standalone: true,
-<<<<<<< HEAD
-  imports: [NavBarComponent,LocationComponent],
-=======
   imports: [NavBarComponent,FormsModule,CommonModule],
->>>>>>> 690426b2be454d32858958ce829216e4991eb785
   templateUrl: './emergency-services.component.html',
   styleUrls: ['./emergency-services.component.css'],
 })
