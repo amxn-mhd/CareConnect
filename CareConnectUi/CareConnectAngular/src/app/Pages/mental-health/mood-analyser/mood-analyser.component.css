@@ -4,7 +4,8 @@
   color: black;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 100%; /* Ensure the component takes up full width */
+  box-sizing: border-box; /* Include padding in width calculations */
 }
 
 .mood-analyser h2 {
@@ -13,10 +14,17 @@
   margin-bottom: 10px;
 }
 
+.table-container {
+  max-height: 200px; /* Set a fixed height for the table */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ddd; /* Add a border around the scrollable area */
+  border-radius: 4px;
+}
+
 .mood-analyser table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed; /* Ensures columns take equal width */
+  table-layout: fixed; /* Consistent column widths */
 }
 
 .mood-analyser table th,
@@ -24,40 +32,30 @@
   padding: 12px;
   text-align: left;
   border: 1px solid #ddd;
-  height: 40px; /* Fixed height for each row */
-  word-wrap: break-word; /* Prevent text overflow */
 }
 
 .mood-analyser table th {
   background-color: #f4f4f4;
-  color: white;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1;
 }
 
 .mood-analyser table td {
   background-color: #fafafa;
-  text-align: center; /* Center align the table data */
 }
 
-/* Even rows with a different background color */
 .mood-analyser table tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
-/* Scrollable tbody with a fixed height */
-.mood-analyser table tbody {
-  display: block;
-  max-height: 160px; /* Adjusted height for 4 rows */
-  overflow-y: auto; /* Enable vertical scrolling */
+.improve-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
-.mood-analyser table thead, .mood-analyser table th {
-  position: sticky;
-  top: 0;
-  background-color: #007BFF; /* Blue background for header */
-  color: white;
-  z-index: 2; /* Ensures the header stays above body content */
+.improve-btn:hover {
+  background-color: #45a049;
 }

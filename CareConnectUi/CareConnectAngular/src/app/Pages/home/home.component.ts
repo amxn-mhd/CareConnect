@@ -4,12 +4,11 @@ import { Component, OnInit, inject } from '@angular/core';
 import { MentalHealthService } from '../ApiServices/MentalHealthApiService/mental-health.service';
 import { RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { ServiceComponent } from '../service/service.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FormsModule ,RouterLink,CommonModule,ServiceComponent],
+  imports: [FormsModule ,RouterLink,CommonModule,],
   providers: [DatePipe],  // Add this line
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

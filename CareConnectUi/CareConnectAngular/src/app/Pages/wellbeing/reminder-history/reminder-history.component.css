@@ -4,8 +4,8 @@
   color: black;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Ensure the container takes up full width */
-  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  width: 100%; /* Full width of the container */
+  box-sizing: border-box; /* Include padding in the width */
 }
 
 .reminders .header {
@@ -13,7 +13,6 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-  width: 100%; /* Full width of the parent container */
 }
 
 .reminders h2 {
@@ -36,10 +35,17 @@
   background-color: #45a049;
 }
 
+.table-container {
+  max-height: 200px; /* Set a fixed height for the table container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ddd; /* Optional: Add a border for better visibility */
+  border-radius: 4px; /* Optional: Match the border radius with the overall design */
+}
+
 .reminders table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed; /* Ensures consistent width for columns */
+  table-layout: fixed; /* Ensure consistent column widths */
 }
 
 .reminders table th,

@@ -1,45 +1,19 @@
 <div class="mood-analyser">
   <h2>Mood Analyser</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>Score</th>
-        <th>Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2024-11-01</td>
-        <td>8</td>
-        <td><button class="improve-btn">Improve Score</button></td>
-      </tr>
-      <tr>
-        <td>2024-11-02</td>
-        <td>7</td>
-        <td><button class="improve-btn">Improve Score</button></td>
-      </tr>
-      <tr>
-        <td>2024-11-03</td>
-        <td>6</td>
-        <td><button class="improve-btn">Improve Score</button></td>
-      </tr>
-      <tr>
-        <td>2024-11-04</td>
-        <td>5</td>
-        <td><button class="improve-btn">Improve Score</button></td>
-      </tr>
-      <tr>
-        <td>2024-11-05</td>
-        <td>9</td>
-        <td><button class="improve-btn">Improve Score</button></td>
-      </tr>
-      <tr>
-        <td>2024-11-06</td>
-        <td>7</td>
-        <td><button class="improve-btn">Improve Score</button></td>
-      </tr>
-      <!-- Add more rows as necessary -->
-    </tbody>
-  </table>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let mood of moodData">
+          <td>{{ mood.date }}</td>
+          <td>{{ mood.score }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>

@@ -3,34 +3,27 @@
     <h2>Reminders</h2>
     <button class="add-new-btn">Add New</button>
   </div>
-  <table>
-    <thead>
-      <tr>
-        <th></th>
-        <th>Title</th>
-        <th>Time</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><input type="checkbox" /></td>
-        <td>Meeting with Doctor</td>
-        <td>10:00 AM</td>
-        <td>
-          <button class="action-btn edit-btn">Edit</button>
-          <button class="action-btn delete-btn">Delete</button>
-        </td>
-      </tr>
-      <tr>
-        <td><input type="checkbox" /></td>
-        <td>Grocery Shopping</td>
-        <td>02:30 PM</td>
-        <td>
-          <button class="action-btn edit-btn">Edit</button>
-          <button class="action-btn delete-btn">Delete</button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Title</th>
+          <th>Time</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let reminder of reminders">
+          <td><input type="checkbox" /></td>
+          <td>{{ reminder.title }}</td>
+          <td>{{ reminder.time }}</td>
+          <td>
+            <button class="action-btn edit-btn">Edit</button>
+            <button class="action-btn delete-btn">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
