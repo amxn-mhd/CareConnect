@@ -16,6 +16,7 @@ import { SleepAnalyserComponent } from './Pages/wellbeing/sleep-analyser/sleep-a
 import { RemiderSchedulerComponent } from './Pages/wellbeing/remider-scheduler/remider-scheduler.component';
 import { EmergencyServicesComponent } from './Pages/safety/emergency-services/emergency-services.component';
 import { ReportIncidentComponent } from './Pages/safety/report-incident/report-incident.component';
+import { AdminDashboardComponent } from './Pages/LandAndAuth/admin-dashboard/admin-dashboard.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'landing-page', pathMatch: 'full' },  // Redirect to a valid path
@@ -40,7 +41,8 @@ export const routes: Routes = [
   { path: 'safety', component: SafetyComponent },
   { path: 'report-incident', component: ReportIncidentComponent },
   { path: 'emergency-services', component: EmergencyServicesComponent },
-  { path: '**', redirectTo: 'home' }  
+  { path: '**', redirectTo: 'home' }  ,
+  { path:'admin-dashboard',component:AdminDashboardComponent}
 ];
 
 //optional....
