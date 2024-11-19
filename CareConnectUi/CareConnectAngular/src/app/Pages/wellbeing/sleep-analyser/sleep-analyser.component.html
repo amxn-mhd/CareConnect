@@ -1,0 +1,39 @@
+<app-nav-bar></app-nav-bar>
+<div class="sleep-analyser-container">
+  <!-- Upper Section: Sleep Tracker Form -->
+  <div class="upper-section">
+    <div class="form-container">
+      <h2>Sleep Tracker</h2>
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="hours">Hours:</label>
+          <input
+            type="number"
+            id="hours"
+            name="hours"
+            min="0"
+            max="24"
+            step="1"
+            [(ngModel)]="sleepAnalyser.hours"
+            value="8"
+          />
+        </div>
+        <div class="form-group">
+          <label for="time">Remarks:</label>
+          <input type="text" id="time" name="time" [(ngModel)]="sleepAnalyser.remarks" />
+        </div>
+        <button type="submit" class="btn submit-btn">Submit</button>
+      </form>
+      
+      <!-- Success/Error Message -->
+      <div *ngIf="message" [ngClass]="{'success-message': isSuccess, 'error-message': !isSuccess}">
+        {{ message }}
+      </div>
+    </div>
+  </div>
+
+  <!-- Lower Section: Sleep History -->
+  <div class="lower-section">
+    <app-sleep-history></app-sleep-history>
+  </div>
+</div>

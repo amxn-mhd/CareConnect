@@ -1,0 +1,61 @@
+.mood-analyser {
+  padding: 20px;
+  background-color: #fff;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensure the component takes up full width */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.mood-analyser h2 {
+  font-size: 24px;
+  color: darkblue;
+  margin-bottom: 10px;
+}
+
+.table-container {
+  max-height: 200px; /* Set a fixed height for the table */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ddd; /* Add a border around the scrollable area */
+  border-radius: 4px;
+}
+
+.mood-analyser table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Consistent column widths */
+}
+
+.mood-analyser table th,
+.mood-analyser table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.mood-analyser table th {
+  background-color: #f4f4f4;
+}
+
+.mood-analyser table td {
+  background-color: #fafafa;
+}
+
+.mood-analyser table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.improve-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.improve-btn:hover {
+  background-color: #45a049;
+}

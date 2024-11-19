@@ -1,0 +1,29 @@
+<div class="reminders">
+  <div class="header">
+    <h2>Reminders</h2>
+    <!-- <button class="add-new-btn">Add New</button> -->
+  </div>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Title</th>
+          <th>Time</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let reminder of reminderData">
+          <td><input type="checkbox" /></td>
+          <td>{{ reminder.task }}</td>
+          <td>{{ reminder.time }}</td>
+          <td>
+            <!-- <button class="action-btn edit-btn">Edit</button> -->
+            <button class="action-btn delete-btn" (click)="deleteReminder(reminder.totalreminders)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

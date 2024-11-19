@@ -1,0 +1,36 @@
+.mood-container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .average-mood {
+    background-color: #fffde7;
+  }
+  
+  .average-mood h2 {
+    color: #f9a825;
+  }
+  
+  .average-mood h3 {
+    color: #f57f17;
+  }
+  
+  .average-mood ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .average-mood ul li {
+    margin: 10px 0;
+  }
+  
+  .average-mood a {
+    color: #f57f17;
+    text-decoration: none;
+  }
+  
+  .average-mood a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,60 @@
+<app-nav-bar></app-nav-bar>
+<div class="emergency-container">
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search location" class="search-input" />
+    <button class="search-btn">Search</button>
+  </div>
+
+  <!-- Tables Container -->
+  <div class="tables-container">
+
+    <!-- Nearby Hospitals -->
+    <div class="table-wrapper">
+      <h3>Nearby Hospitals</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Hospital Name</th>
+            <th>Address</th>
+            <th>Contact</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let hospital of hospitals">
+            <td>{{ hospital.name }}</td>
+            <td>{{ hospital.address }}</td>
+            <td>{{ hospital.contact }}</td>
+            <td><button class="call-btn">Call</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Nearby Police Stations -->
+    <div class="table-wrapper">
+      <h3>Nearby Police Stations</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Police Station</th>
+            <th>Address</th>
+            <th>Contact</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let station of policeStations">
+            <td>{{ station.name }}</td>
+            <td>{{ station.address }}</td>
+            <td>{{ station.contact }}</td>
+            <td><button class="call-btn">Call</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>

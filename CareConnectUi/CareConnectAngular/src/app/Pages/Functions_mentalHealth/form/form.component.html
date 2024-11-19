@@ -1,0 +1,26 @@
+<div class="form-container">
+  <!-- Scoremeter Component -->
+  <app-scoremeter *ngIf="showMeter" [score]="score"></app-scoremeter>
+
+  <!-- Assessment Form -->
+  <form (ngSubmit)="onSubmit()" #mentalHealthForm="ngForm">
+    <h2 class="form-heading">Mental Health Assessment</h2>
+
+    <!-- Questions -->
+    <div class="question" *ngFor="let question of questions; let i = index">
+      <label>{{ question.text }}</label>
+      <select [(ngModel)]="question.answer" [name]="'q' + i" required>
+        <option value="">Select an answer</option>
+        <option [value]="0">No</option>
+        <option [value]="1">Yes</option>
+        <!-- <option [value]="3">Often</option>
+        <option [value]="4">Always</option> -->
+      </select>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" [disabled]="!mentalHealthForm.form.valid" class="btn submit-btn">
+      Submit Assessment
+    </button>
+  </form>
+</div>

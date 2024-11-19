@@ -1,0 +1,6 @@
+@CareConnect.Services.UserApi_HostAddress = http://localhost:5127
+
+GET {{CareConnect.Services.UserApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

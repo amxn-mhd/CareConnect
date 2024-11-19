@@ -1,0 +1,44 @@
+.mood-container {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bad-mood {
+  background-color: #ffebee;
+}
+
+.bad-mood h2 {
+  color: #d32f2f;
+}
+
+.bad-mood h3 {
+  color: #c62828;
+}
+
+.bad-mood blockquote {
+  font-style: italic;
+  color: #c62828;
+  border-left: 4px solid #d32f2f;
+  padding-left: 10px;
+  margin: 20px 0;
+}
+
+.bad-mood ul {
+  list-style-type: none;
+  color: black;
+  padding: 0;
+}
+
+.bad-mood ul li {
+  margin: 10px 0;
+}
+
+.bad-mood a {
+  color: #d32f2f;
+  text-decoration: none;
+}
+
+.bad-mood a:hover {
+  text-decoration: underline;
+}

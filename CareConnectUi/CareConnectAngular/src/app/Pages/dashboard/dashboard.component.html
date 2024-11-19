@@ -1,0 +1,24 @@
+<app-nav-bar></app-nav-bar>
+<div class="dashboard-container">
+    <div class="upper-section">
+      <!-- Left side: Mood Analyser -->
+      <div class="left-side">
+        <app-mood-analyser></app-mood-analyser>
+      </div>
+  
+      <!-- Right side: Buttons -->
+      <div class="right-side">
+        <button class="btn wide-btn" routerLink="/sleep-analyser">Sleep Analyser</button>
+        <button class="btn wide-btn" routerLink="/reminder-scheduler">Reminder Scheduler</button>
+        <button class="btn wide-btn" routerLink="/mental-health">Mood Tracker</button>
+        <button class="btn wide-btn" routerLink="/emergency-services">Get Emergency Services</button>
+        <button class="btn wide-btn" routerLink="/report-incident">Report an Incident</button>
+      </div>
+    </div>
+  
+    <!-- Lower Section: Reminders -->
+    <div class="lower-section">
+      <app-reminder-history></app-reminder-history>
+    </div>
+  </div>
+  

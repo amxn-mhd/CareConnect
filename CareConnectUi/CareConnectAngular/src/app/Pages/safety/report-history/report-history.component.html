@@ -1,0 +1,27 @@
+<div class="history-container">
+  <h2>Reported Incidents History</h2>
+  
+  <!-- Scrollable Table Container -->
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Location</th>
+          <th>Type of Incident</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let report of reports; let i = index">
+          <td>{{ report.time }}</td>
+          <td>{{ report.location }}</td>
+          <td>{{ report.type }}</td>
+          <td>
+            <button class="delete-btn" (click)="deleteReport(i)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="sleep-history">
+  <h2>Sleep History</h2>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Hours Slept</th>
+          <th>Remarks</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let record of  sleeprData">
+          <td>{{ record.dateTimeOfEntry}}</td>
+          <td>{{ record.rating }}</td>
+          <td>{{ record.remarks }}</td>
+          <td>
+            <!-- <button class="action-btn edit-btn">Edit</button> -->
+            <button class="action-btn delete-btn" (click)="deleteHistory(record.entryId)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
