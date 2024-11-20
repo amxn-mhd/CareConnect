@@ -1,0 +1,127 @@
+<div class="mood-container bad-mood">
+  <h2>Support When You Need It</h2>
+  <div class="content">
+      <h3>Get Professional help For FREE</h3>
+      <div class="card-grid">
+          <div *ngFor="let doc of doctors"class="card">
+              <div class="card-header">CareConnect  </div>
+              <div class="card-content">
+                <ul>
+                  <li><strong>ID:</strong> {{ doc.doctorId }}</li>
+                  <li><strong>Name:</strong> {{ doc.doctorName }}</li>
+                  <li><strong>Specialization:</strong> {{ doc.specialization }}</li>
+                  <li><strong>Availability:</strong> {{ doc.availability }}</li>
+                </ul>
+              </div>
+          </div>
+          
+      </div>
+
+      <h3>Community Articles</h3>
+      <div class="card-grid">
+          <div class="card">
+              <div class="card-header">Mindfulness Practices</div>
+              <div class="card-content">
+                  <p>Learn simple daily mindfulness techniques for better mental health.</p>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-header">Stress Management</div>
+              <div class="card-content">
+                  <p>Effective strategies for managing daily stress and anxiety.</p>
+              </div>
+          </div>
+      </div>
+
+      <h3>Feel Good Videos</h3>
+      <div class="card-grid">
+          <div class="card">
+              <div class="video-card">
+                  <img src="/api/placeholder/400/225" alt="Funny Animal Compilations" class="video-thumbnail">
+                  <div class="video-play-icon">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cOhHcDN08i4?si=LcI7f3Rd31T4j1FQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+              </div>
+              <div class="card-content">
+                  <h4>Funny Animal Compilations</h4>
+                  <p>Instant mood lifter with adorable animals</p>
+              </div>
+          </div>
+          <div class="card">
+              <div class="video-card">
+                  <img src="/api/placeholder/400/225" alt="Motivational Speech" class="video-thumbnail">
+                  <div class="video-play-icon"><iframe width="560" height="315" src="https://www.youtube.com/embed/Udap-5rVWeM?si=eX-kyoN6c98K2NpJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+              </div>
+              <div class="card-content">
+                  <h4>Indian Motivational Speech</h4>
+                  <p>Inspiring words from Sandeep Maheshwari</p>
+              </div>
+          </div>
+          <div class="card">
+              <div class="video-card">
+                  <img src="/api/placeholder/400/225" alt="Calming Music" class="video-thumbnail">
+                  <div class="video-play-icon"><iframe width="560" height="315" src="https://www.youtube.com/embed/rtTI1rh9U5M?si=bDOd9-8z_SoG3l6h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+              </div>
+              <div class="card-content">
+                  <h4>Relaxing Music Playlist</h4>
+                  <p>Peaceful tunes for relaxation</p>
+              </div>
+          </div>
+          <!-- <div class="card">
+              <div class="video-card">
+                  <img src="/api/placeholder/400/225" alt="Comedy Sketches" class="video-thumbnail">
+                  <div class="video-play-icon"><iframe width="560" height="315" src="https://www.youtube.com/embed/8bPWXYM2ysU?si=s0A7_6dctYunjcMP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+              </div>
+              <div class="card-content">
+                  <h4>Stand-up Comedy Highlights</h4>
+                  <p>Best comedy bits to lift your spirits</p>
+              </div>
+          </div> -->
+      </div>
+
+      <h3>Encouraging Quotes</h3>
+      <div class="card-grid">
+          <div class="card">
+              <div class="card-content">
+                  <blockquote>"Tough times never last, but tough people do."</blockquote>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-content">
+                  <blockquote>"You are not alone. You are stronger than you think."</blockquote>
+              </div>
+          </div>
+      </div>
+
+      <h3>Helpful Resources</h3>
+      <div class="card-grid">
+          <div class="card">
+              <div class="card-header">Mental Health Resources</div>
+              <div class="card-content">
+                  <p>Access professional help and guidance</p>
+                  <a href="https://www.mentalhealth.gov/" target="_blank" class="call-button">Visit MentalHealth.gov</a>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-header">24/7 Helpline</div>
+              <div class="card-content">
+                  <p>Get immediate support when you need it</p>
+                  <a href="https://www.samhsa.gov/find-help/national-helpline" target="_blank" class="call-button">SAMHSA Helpline</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script>
+  // Add hover effect for video cards
+  const videoCards = document.querySelectorAll('.video-card');
+  videoCards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+          card.querySelector('.video-play-icon').style.transform = 'translate(-50%, -50%) scale(1.1)';
+      });
+      card.addEventListener('mouseleave', () => {
+          card.querySelector('.video-play-icon').style.transform = 'translate(-50%, -50%) scale(1)';
+      });
+  });
+</script>

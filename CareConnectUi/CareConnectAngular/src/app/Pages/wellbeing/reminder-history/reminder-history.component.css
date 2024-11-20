@@ -1,0 +1,91 @@
+.reminders {
+  padding: 20px;
+  background-color: #fff;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Full width of the container */
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+.reminders .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reminders h2 {
+  font-size: 24px;
+  color: darkblue;
+  margin: 0;
+}
+
+.add-new-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.add-new-btn:hover {
+  background-color: #45a049;
+}
+
+.table-container {
+  max-height: 200px; /* Set a fixed height for the table container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ddd; /* Optional: Add a border for better visibility */
+  border-radius: 4px; /* Optional: Match the border radius with the overall design */
+}
+
+.reminders table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensure consistent column widths */
+}
+
+.reminders table th,
+.reminders table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.reminders table th {
+  background-color: #f4f4f4;
+}
+
+.reminders table td {
+  background-color: #fafafa;
+}
+
+.reminders table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.action-btn {
+  padding: 6px 12px;
+  margin: 0 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.action-btn:hover {
+  opacity: 0.9;
+}

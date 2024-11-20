@@ -1,0 +1,34 @@
+
+<app-nav-bar></app-nav-bar>
+<!-- <app-report-history></app-report-history> -->
+<div class="history-container">
+    <h2>Reported Incidents History</h2>
+    
+    <!-- Scrollable Table Container -->
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>BloodGroup</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let report of reports">
+            <td>{{ report.name }}</td>
+            <td>{{ report.email }}</td>
+            <td>{{ report.age }}</td>
+            <td>{{ report.bloodGroup}}</td>
+            <td>
+             <button class="delete-btn" (click)="sendHelpEmail(report)">MailAction</button>            </td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  

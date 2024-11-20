@@ -1,0 +1,55 @@
+/* ScoreMeter Container */
+.score-meter {
+  width: 50%;
+  padding: 15px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  
+  
+  font-family: Arial, sans-serif;
+}
+
+/* Meter Styling */
+.meter-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.meter {
+  width: 100%;
+  height: 25px;
+  background: #f4f4f4;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.meter-fill {
+  height: 100%;
+  background: linear-gradient(to right, #ff4d4d, #ffc107, #4caf50);
+  border-radius: 20px;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Score Badge */
+.score-badge {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: darkblue;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Score Text */
+.score-text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}

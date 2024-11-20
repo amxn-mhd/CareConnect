@@ -1,0 +1,66 @@
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="../../../CC.png" alt="CareConnect Logo"> <!-- Logo image -->
+  </div>
+  <button routerLink="/emergency-services" class="sos-btn">SOS</button>
+</nav>
+
+<!-- Login Form Container -->
+<div class="login-container">
+  <form class="login-form" (ngSubmit)="onLogin()" #loginForm="ngForm" novalidate>
+    <h2>Login</h2>
+
+    <!-- Username Field -->
+    <div class="form-group">
+      <label for="userName">Username</label>
+      <input
+        type="text"
+        id="userName"
+        name="userName"
+        placeholder="Enter your username"
+        [(ngModel)]="loginData.userName"
+        required
+        #userNameField="ngModel"
+        [class.is-invalid]="userNameField.invalid && userNameField.touched"
+      />
+      <div class="invalid-feedback">Please enter your username.</div>
+    </div>
+
+    <!-- Password Field -->
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+        [(ngModel)]="loginData.password"
+        required
+        #passwordField="ngModel"
+        [class.is-invalid]="passwordField.invalid && passwordField.touched"
+      />
+      <div class="invalid-feedback">Please enter your password.</div>
+    </div>
+
+    <!-- Login Button -->
+    <button
+      type="submit"
+      class="submit-btn"
+      [disabled]="loginForm.invalid"
+    >
+      Login
+    </button>
+
+    <!-- Register Navigation -->
+    <p class="register-link">
+      Don't have an account? 
+      <a routerLink="/register">Register</a>
+    </p>
+
+    <!-- Error Message -->
+    <p *ngIf="errorMessage" class="text-danger">
+      {{ errorMessage }}
+    </p>
+  </form>
+</div>

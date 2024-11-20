@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GateWay", "GateWay", "{E815280B-673D-4F54-A172-5E268BC58E8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{AF61533E-2987-4ED0-A678-C47DAA45E029}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareConnect.Services.AuthApi", "CareConnect.Services.AuthApi\CareConnect.Services.AuthApi.csproj", "{27A5A088-8019-4B3A-9104-4DE81AD78599}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareConnect.GateWay.OcilateGateWay", "CareConnect.GateWay.OcilateGateWay\CareConnect.GateWay.OcilateGateWay.csproj", "{AB7D3624-6C7D-452F-8962-BC357D49C7CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareConnect.Services.SafetyApi", "CareConnect.Services.SafetyApi\CareConnect.Services.SafetyApi.csproj", "{95964B57-5300-4C53-8E56-557BFAE2679F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareConnect.Services.MentelHealthApi", "CareConnect.Services.MentelHealthApi\CareConnect.Services.MentelHealthApi.csproj", "{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareConnect.Services.WellBeingApi", "CareConnect.Services.WellBeingApi\CareConnect.Services.WellBeingApi.csproj", "{15750D08-BB5B-4146-A790-6D136D44B506}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27A5A088-8019-4B3A-9104-4DE81AD78599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A5A088-8019-4B3A-9104-4DE81AD78599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A5A088-8019-4B3A-9104-4DE81AD78599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A5A088-8019-4B3A-9104-4DE81AD78599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB7D3624-6C7D-452F-8962-BC357D49C7CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB7D3624-6C7D-452F-8962-BC357D49C7CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB7D3624-6C7D-452F-8962-BC357D49C7CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB7D3624-6C7D-452F-8962-BC357D49C7CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95964B57-5300-4C53-8E56-557BFAE2679F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95964B57-5300-4C53-8E56-557BFAE2679F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95964B57-5300-4C53-8E56-557BFAE2679F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95964B57-5300-4C53-8E56-557BFAE2679F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33FFBF71-9B9C-470D-8632-1AF502E4C1FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15750D08-BB5B-4146-A790-6D136D44B506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15750D08-BB5B-4146-A790-6D136D44B506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15750D08-BB5B-4146-A790-6D136D44B506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15750D08-BB5B-4146-A790-6D136D44B506}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{27A5A088-8019-4B3A-9104-4DE81AD78599} = {AF61533E-2987-4ED0-A678-C47DAA45E029}
+		{AB7D3624-6C7D-452F-8962-BC357D49C7CA} = {E815280B-673D-4F54-A172-5E268BC58E8D}
+		{95964B57-5300-4C53-8E56-557BFAE2679F} = {AF61533E-2987-4ED0-A678-C47DAA45E029}
+		{33FFBF71-9B9C-470D-8632-1AF502E4C1FC} = {AF61533E-2987-4ED0-A678-C47DAA45E029}
+		{15750D08-BB5B-4146-A790-6D136D44B506} = {AF61533E-2987-4ED0-A678-C47DAA45E029}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A42FF54-F7CE-47A9-870E-84FABE4D00AC}
+	EndGlobalSection
+EndGlobal

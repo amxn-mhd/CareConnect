@@ -1,0 +1,75 @@
+<div class="services-container">
+  <div *ngIf="loading" class="loading">
+    Loading nearby services...
+  </div>
+
+  <div *ngIf="error" class="error">
+    {{ error }}
+  </div>
+
+  <div *ngIf="!loading && !error">
+    <!-- Hospitals Table -->
+    <div class="table-section">
+      <h2>Nearby Hospitals</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Distance</th>
+            <th>Directions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let hospital of hospitals">
+            <td>{{ hospital.name }}</td>
+            <td>{{ hospital.address }}, {{ hospital.city }}, {{ hospital.state }}, {{ hospital.postcode }}</td>
+            <td>{{ hospital.distance }}m</td>
+            <td>
+              <a [href]="getDirectionsUrl(hospital)" target="_blank" class="directions-link">
+                Get Directions
+              </a>
+            </td>
+          </tr>
+          <tr *ngIf="hospitals.length === 0">
+            <td colspan="4">No hospitals found nearby</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Police Stations Table -->
+    <div class="table-section">
+      <h2>Nearby Police Stations</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Distance</th>
+            <th>Directions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let station of policeStations">
+            <td>{{ station.name }}</td>
+            <td>{{ station.address }}, {{ station.city }}, {{ station.state }}, {{ station.postcode }}</td>
+            <td>{{ station.distance }}m</td>
+            <td>
+              <a [href]="getDirectionsUrl(station)" target="_blank" class="directions-link">
+                Get Directions
+              </a>
+            </td>
+          </tr>
+          <tr *ngIf="policeStations.length === 0">
+            <td colspan="4">No police stations found nearby</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <button (click)="fetchNearbyServices()" [disabled]="loading" class="refresh-button">
+    Refresh Services
+  </button>
+</div>

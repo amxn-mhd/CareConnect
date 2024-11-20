@@ -1,0 +1,109 @@
+<div class="form-container">
+      <div class="container mx-auto p-4">
+        <h2 class="text-2xl font-bold mb-4">Report an Incident</h2>
+        <form (ngSubmit)="onSubmit()" #incidentForm="ngForm" class="space-y-4">
+          <!-- Date and Time Selection -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="form-group">
+              <label for="date" class="block mb-2">Date of Incident:</label>
+              <input 
+                type="date" 
+                id="date"
+                name="date"
+                [(ngModel)]="report.dateTimeOfEntry"
+                class="w-full p-2 border rounded"
+              >
+            </div>
+      
+            <div class="form-group">
+              <label for="time" class="block mb-2">Time of Incident:</label>
+              <input 
+                type="time" 
+                id="time"
+                name="time"
+                [(ngModel)]="report.time"
+                class="w-full p-2 border rounded"
+              >
+            </div>
+          </div>
+      
+          <!-- Type of Accident -->
+          <div class="form-group">
+            <label for="typeOfAccident" class="block mb-2">Type of Accident:</label>
+            <select 
+              id="typeOfAccident"
+              name="typeOfAccident"
+              [(ngModel)]="report.typeOfAccident"
+              required
+              class="w-full p-2 border rounded"
+            >
+              <option value="">Select Type of Accident</option>
+              <option *ngFor="let type of incidentTypes" [value]="type">
+                {{type}}
+              </option>
+            </select>
+          </div>
+      
+          <!-- Location -->
+          <div class="form-group">
+            <label for="location" class="block mb-2">Location:</label>
+            <input 
+              type="text"
+              id="location"
+              name="location"
+              [(ngModel)]="report.location"
+              required
+              class="w-full p-2 border rounded"
+              placeholder="Enter incident location"
+            >
+          </div>
+      
+          <!-- Description -->
+          <div class="form-group">
+            <label for="description" class="block mb-2">Description:</label>
+            <textarea 
+              id="description"
+              name="description"
+              [(ngModel)]="report.shortDescription"
+              required
+              rows="4"
+              class="w-full p-2 border rounded"
+              placeholder="Describe what happened..."
+            ></textarea>
+          </div>
+      
+          <!-- Authorize Edit Checkbox -->
+          <div class="form-group">
+            <label class="flex items-center space-x-2">
+              <input 
+                type="checkbox"
+                name="authorizeEdit"
+                [(ngModel)]="report.authorizeEdit"
+                class="form-checkbox"
+              >
+              <span>I authorize this report to be edited if needed</span>
+            </label>
+          </div>
+      
+          <!-- Submit Button -->
+          <div class="form-group">
+            <button 
+              type="submit"
+              [disabled]="!incidentForm.form.valid"
+              class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 disabled:bg-gray-400"
+            >
+              Submit Report
+            </button>
+            <button  (ngSubmit)="UpdateReport()"
+            [disabled]="!incidentForm.form.valid"
+            class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 disabled:bg-gray-400">Update existing </button>
+
+            
+            <button routerLink='/report-history' type="submit">Know Your Past Reports </button>
+
+          </div>
+
+        </form>
+      </div>
+    
+  

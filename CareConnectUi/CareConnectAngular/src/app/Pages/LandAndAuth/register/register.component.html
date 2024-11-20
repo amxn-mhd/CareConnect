@@ -1,0 +1,149 @@
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="../../../CC.png" alt="CareConnect Logo"> <!-- Logo image -->
+  </div>
+
+  <button routerLink="emergency-services" class="sos-btn">SOS</button>
+  <button routerLink="login" class="sos-btn" > Back To Dashboard</button>
+
+</nav>
+
+<div class="registration-container">
+  <form class="registration-form" (ngSubmit)="onRegister()" #registerForm="ngForm" novalidate>
+    <h2>Registration Form</h2>
+    <div class="form-row">
+      <!-- Name -->
+      <div class="form-group">
+        <label for="name">Name <span class="required">*</span></label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          [(ngModel)]="registerData.Name"
+          required
+          #nameField="ngModel"
+          [class.is-invalid]="nameField.invalid && nameField.touched"
+        />
+        <div class="invalid-feedback">Please enter your name.</div>
+      </div>
+      <!-- Age -->
+      <div class="form-group">
+        <label for="age">Age <span class="required">*</span></label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          placeholder="Enter your age"
+          [(ngModel)]="registerData.Age"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <!-- Phone Number -->
+      <div class="form-group">
+        <label for="phone">Phone Number <span class="required">*</span></label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter your phone number"
+          [(ngModel)]="registerData.PhoneNumber"
+          required
+        />
+      </div>
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email ID <span class="required">*</span></label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email ID"
+          [(ngModel)]="registerData.Email"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <!-- Password -->
+      <div class="form-group">
+        <label for="password">Password <span class="required">*</span></label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          [(ngModel)]="registerData.Password"
+          required
+        />
+      </div>
+      <!-- Blood Group -->
+      <div class="form-group">
+        <label for="bloodGroup">Blood Group</label>
+        <input
+          type="text"
+          id="bloodGroup"
+          name="bloodGroup"
+          placeholder="Enter your blood group"
+          [(ngModel)]="registerData.BloodGroup"
+        />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <!-- Marital Status -->
+      <div class="form-group">
+        <label for="maritalStatus">Marital Status</label>
+        <select
+          id="maritalStatus"
+          name="maritalStatus"
+          [(ngModel)]="registerData.MaritalStatus"
+        >
+          <option value="">Select</option>
+          <option value="single">Single</option>
+          <option value="married">Married</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <!-- Job -->
+      <div class="form-group">
+        <label for="job">Job</label>
+        <input
+          type="text"
+          id="job"
+          name="job"
+          placeholder="Enter your job"
+          [(ngModel)]="registerData.JobDescription"
+        />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <!-- Role -->
+      <div class="form-group">
+        <label for="role">Role</label>
+        <select
+          id="role"
+          name="role"
+          [(ngModel)]="registerData.role"
+        >
+          <option value="User" selected>User</option>
+          <!-- <option value="Admin">Admin</option> -->
+        </select>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn">Register</button>
+
+
+    <!-- Success/Error Messages -->
+    <p *ngIf="successMessage" class="text-success">{{ successMessage }}</p>
+    <p *ngIf="errorMessage" class="text-danger">{{ errorMessage }}</p>
+  </form>
+
+</div>

@@ -1,0 +1,44 @@
+<header class="header">
+  <nav class="navigation">
+    <div class="nav-logo">LOGO</div>
+    <ul class="nav-list">
+      <li><a href="home" class="nav-item">Home</a></li>
+      <li><a href="/sos" class="nav-item sos-btn">SOS</a></li>
+      <li><button class="nav-item">User</button></li>
+      <li><a href="landing-page" class="nav-item">Logout</a></li>
+    </ul>
+  </nav>
+  
+  </header>
+
+<div class="main-content">
+    <div class="mood-analyzer">
+      <h2>Mood Analyzer</h2>
+      <div class="mood-list">
+        <div class="mood-item" *ngFor="let mood of DateWiseMoodList">
+          <span class="star-icon">⭐</span>
+          <div>
+            <div>{{ mood.dateTimeOfEntry | date:'yyyy-MM-dd' }}</div>
+            <div>Score: {{mood.Score}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!--  addition need to be done . in home . ...-->
+    
+    <!--  addition need to be done . in home . ...-->
+
+    <div class="reminders-section">
+      <h2>Reminders</h2>
+      <div class="reminders-grid">
+        <div class="reminder-item" *ngFor="let reminder of reminders">
+          <input type="checkbox" [id]="reminder.id">
+          <label [for]="reminder.id">
+            {{reminder.task}}
+            <div>Time: {{reminder.time}}</div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>

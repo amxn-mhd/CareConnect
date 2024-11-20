@@ -1,0 +1,13 @@
+<nav class="navigation">
+  <!-- <div class="nav nav-logo logos">
+    <img  routerLink="dashboard" src="../../../CC.png" alt="CareConnect Logo"> 
+  </div> -->
+  <ul class="nav-list">
+    <li><a routerLink="/emergency-services" class="nav-item sos-btn">SOS</a></li>
+    <!-- <ng-container *ngIf="isUserLoggedIn"> -->
+      <li><a routerLink="/dashboard" class="nav-item">Home</a></li>
+      <li><button routerLink="/user" class="nav-item">User</button></li>
+    <!-- </ng-container> -->
+    <li><a routerLink="/landing-page" class="nav-item" (click)="logout()">Logout</a></li>
+  </ul>
+</nav>
